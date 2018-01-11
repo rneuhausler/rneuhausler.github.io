@@ -1,0 +1,11 @@
+name: "rosannas-website"
+output_dir: "."
+navbar:
+  title: "Rosanna Neuhausler"
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About Me"
+      href: about.html
+    - text: "CV"
+      href: cv.html
