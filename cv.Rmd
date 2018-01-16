@@ -1,4 +1,75 @@
 ---
-title: "My CV"
+title: ""
 ---
 
+
+<center>**Education**</center>
+<br>
+**University of California, Berkeley** <br>
+**Graduate GPA: 3.86** 08/2016 - present <br>
+Ph.D. Geography, Physical<br>
+NSF Research Traineeship Program: Data Sciences for the 21st Century <br>
+**Undergraduate GPA: 3.56** 08/2012 - 05/2016 <br>
+B.S. Conservation and Resource Studies, focus: Water Systems Engineering <br>
+B.A. Urban Studies <br>
+
+<center>**Skills**</center>
+<br>
+**Computer**: Python, R, MATLAB, Git, LaTeX, ArcGIS, AdobePhotoshop, AutoCAD, Currently learning D3.js, C++, and Google Earth Engine. <br>
+**Language**: English, Swiss-German, and German. Currently learning French.
+
+
+<center>**Selected Internships**</center>
+<br>
+**Cal Energy Corps: Urban Climate Study (NT, Hong Kong)** 		      06/2015 - 08/2015 <br>
+As part of the Cal Energy Corps internship program, semi-automated step in research process for Edward Ng, at the Chinese University of Hong Kong.
+Wrote a MATLAB script and functions that semi-automated the process for calculating view factors of various enveloping structural and natural surfaces onto a central point from fisheye images. 
+In the process of writing the code, I taught myself how to code and how to explain code to the architecture majors that then used it. 
+
+**Arndt Geiger Herrmann Architecture Firm (Zurich, Switzerland)** 	      06/2013 - 08/2013 <br>
+Designed interior features for an $8 million house on CAD software.
+Contributed to numerous projects via presentation preparation and CAD drawings
+
+<center>**Selected Research**</center>
+<br>
+**Modeling for the Moorea Island Digital Ecosystem Avatar (Oxford, UK)**      05/2016 - Present <br>
+Contributing to the Moorea IDEA, a multi-university initiative striving to advance complex systems modeling at the socio-environmental interface. <br>
+In collaboration with Dr. Maria Bruna and  Dr. Martin Robinson, spent five weeks over the summer at Oxford University creating a stochastic spatio-temporal model of coral cover as a function of various environmental inputs.
+
+**Salmon Creek Endmember Analysis: Methodological Comparison**	     10/2016 - Present <br>
+Comparing stable isotopes and fluorescence in their ability to discriminate between different sources of water within a catchment.
+In collaboration with Prof. Laurel Larsen, continuing her initial research on the role of riparian zones in stream water through the combination of flourescence spectroscopy and end member mixing analysis. 
+
+**Fluvial Geomorphology, Everglades Study** 		 	   	      07/2014 - 05/2015 <br>
+Research assistant for Laurel Larsen, professor in the Geography Department, UC Berkeley. <br>
+Manipulating a provided MATLAB code to perform noise reduction on flow rate data that was then used to determine bed shear stresses for calculating sediment transport. <br>
+Compared to observations from Acoustic Doppler Velocimeter (ADV) data, viewed via Vectrino Profiler playback <br>
+
+**Flood Inundation Simulations of the Bay Area and Sacramento Delta**
+03/2014 - 03/2015 <br>
+Research assistant for John Radke, professor in Landscape Architecture Department, UC Berkeley <br>
+Prepared terrestrial spatial data used in simulating the 100-year storm impact, at various predicted Sea-Level Rise stages, on the California Coast, San Francisco Bay Area, and San Joaquin Delta. <br>
+Gathered data through LiDar Analyst tools, & digitizing, and contacting local government agencies. Managed and processed data in multi-server network. <br>
+
+<center>**Awards and Grants**</center>
+<br>
+EWJ Gateway Fellowship | 08/2016 - 05/2017 <br>
+NSF Research Traineeship Fellowship | 06/2017 - 06/2018 <br>
+Hong Kong PhD Fellowship Scheme (did not accept) | 08/2016 - 08/2019 <br>
+Berkeley Conference Travel Grant | 12/2017 <br>
+
+<center>**Selected Conference Talks**</center>
+<br>
+**European Coral Reef Symposium, Oxford, UK** 			         December 13-15, 2017 <br>
+Stochastic spatio-temporal model of coral cover as a function of herbivorous grazers, water quality, and coral demographics <br>
+Rosanna Neuhausler1, Martin Robinson 2,3, and Maria Bruna 2,3,
+1. University of California, Berkeley, USA.  2. University of Oxford, UK
+
+**Workshops on Big Data and Urban Informatics, Chicago, IL ** 		   August 11-12, 2014 <br>
+Planning for the Change: Mapping Sea Level Rise and Storm Inundation in Sherman Island Using 3Di Hydrodynamic Model and LiDAR <br>
+Yang Ju1, Wei-Chen Hsu1, John D. Radke1, William L. Fourt1, Wei Lang1, Olivier Hoes2, Howard Foster1, Gregory Biging1, Emery Roe1, Martine Schmidt-Poolman2, Rosanna Neuhausler1, Amna Alruheil1 and William F. Maier1 <br>
+1. University of California, Berkeley, USA.  2. Delft University of Technology, Netherlands
+
+<center>**Selected Publications**</center>
+<br>
+Y. Ju, W. Hsu, J. Radke, W. Fourt, W. Lang, O. Hoes, H. Foster, G. Biging, M. Schmidt-Poolman, R. Neuhausler, A. Alruheil, W. Maier. (2016) <br> Planning for the Change: Mapping Sea Level Rise and Storm Inundation in Sherman Island Using 3Di Hydrodynamic Model and LiDAR. In: Thakuriah P., Tilahun N., Zellner M. (eds) Seeing Cities Through Big Data. Springer Geography. Springer, Cham. [707 downloads on link.spring.com,11/17]
