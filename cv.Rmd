@@ -2,7 +2,12 @@
 title: ""
 ---
 
-
+```{r}
+#https://getbootstrap.com/docs/3.3/components/
+#https://github.com/rstudio/rmarkdown-website/blob/master/_navbar.html
+#http://rmarkdown.rstudio.com/rmarkdown_websites.html
+#
+```
 <center>**Education**</center>
 <br>
 **University of California, Berkeley** <br>
@@ -17,6 +22,8 @@ B.A. Urban Studies <br>
 <br>
 **Computer**: Python, R, MATLAB, Git, LaTeX, ArcGIS, AdobePhotoshop, AutoCAD, Currently learning D3.js, C++, and Google Earth Engine. <br>
 **Language**: English, Swiss-German, and German. Currently learning French.
+
+---------
 
 
 <center>**Selected Internships**</center>
