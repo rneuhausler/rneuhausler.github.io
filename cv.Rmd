@@ -2,12 +2,6 @@
 title: ""
 ---
 
-```{r}
-#https://getbootstrap.com/docs/3.3/components/
-#https://github.com/rstudio/rmarkdown-website/blob/master/_navbar.html
-#http://rmarkdown.rstudio.com/rmarkdown_websites.html
-#
-```
 <center>**Education**</center>
 <br>
 **University of California, Berkeley** <br>
