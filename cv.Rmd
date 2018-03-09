@@ -11,7 +11,7 @@ title: ""
 <center>**Education**</center>
 <br>
 **University of California, Berkeley** <br>
-**Graduate GPA: 3.86** 08/2016 - present <br>
+**Graduate GPA: 3.88** 08/2016 - present <br>
 Ph.D. Geography, Physical<br>
 NSF Research Traineeship Program: Data Sciences for the 21st Century <br>
 **Undergraduate GPA: 3.56** 08/2012 - 05/2016 <br>
