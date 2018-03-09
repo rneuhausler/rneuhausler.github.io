@@ -26,7 +26,7 @@ B.A. Urban Studies <br>
 ---------
 
 
-<center>**Selected Internships**</center>
+<center>**Internships**</center>
 <br>
 **Cal Energy Corps: Urban Climate Study (NT, Hong Kong)** 		      06/2015 - 08/2015 <br>
 As part of the Cal Energy Corps internship program, semi-automated step in research process for Edward Ng, at the Chinese University of Hong Kong.
@@ -37,7 +37,7 @@ In the process of writing the code, I taught myself how to code and how to expla
 Designed interior features for an $8 million house on CAD software.
 Contributed to numerous projects via presentation preparation and CAD drawings
 
-<center>**Selected Research**</center>
+<center>**Research**</center>
 <br>
 **Modeling for the Moorea Island Digital Ecosystem Avatar (Oxford, UK)**      05/2016 - Present <br>
 Contributing to the Moorea IDEA, a multi-university initiative striving to advance complex systems modeling at the socio-environmental interface. <br>
@@ -65,16 +65,23 @@ NSF Research Traineeship Fellowship | 06/2017 - 06/2018 <br>
 Hong Kong PhD Fellowship Scheme (did not accept) | 08/2016 - 08/2019 <br>
 Berkeley Conference Travel Grant | 12/2017 <br>
 
-<center>**Selected Conference Talks**</center>
+<center>**Conference Talks**</center>
 <br>
+**AGU Ocean Sciences Meeting** February 11-16th, 2018 <br>
+Assessing social vulnerabilities to potential Superfund site failures from coastal storm surge in the United States <br>
+**Rosanna Neuhausler^1^**, Jacob Jean Bukoski^2^, and Adam Orford^3^.
+1. University of California, Berkeley, Department of Geography.
+2. University of California, Berkeley, Department of Environmental Science, Policy, and Management.
+3. University of California, Berkeley, Energy and Resources Group.
+
 **European Coral Reef Symposium, Oxford, UK** 			         December 13-15, 2017 <br>
 Stochastic spatio-temporal model of coral cover as a function of herbivorous grazers, water quality, and coral demographics <br>
-Rosanna Neuhausler1, Martin Robinson 2,3, and Maria Bruna 2,3,
-1. University of California, Berkeley, USA.  2. University of Oxford, UK
+**Rosanna Neuhausler^1^**, Martin Robinson ^2,3^, and Maria Bruna ^2,3^ <br>
+1. University of California, Berkeley, USA.  2. University of Oxford, Computer Science Department 3. University of Oxford, Mathematical Institute
 
 **Workshops on Big Data and Urban Informatics, Chicago, IL ** 		   August 11-12, 2014 <br>
 Planning for the Change: Mapping Sea Level Rise and Storm Inundation in Sherman Island Using 3Di Hydrodynamic Model and LiDAR <br>
-Yang Ju1, Wei-Chen Hsu1, John D. Radke1, William L. Fourt1, Wei Lang1, Olivier Hoes2, Howard Foster1, Gregory Biging1, Emery Roe1, Martine Schmidt-Poolman2, Rosanna Neuhausler1, Amna Alruheil1 and William F. Maier1 <br>
+Yang Ju^1^, Wei-Chen Hsu^1^, John D. Radke^1^, William L. Fourt^1^, Wei Lang^1^, Olivier Hoes^2^, Howard Foster^1^, Gregory Biging1, Emery Roe^1^, Martine Schmidt-Poolman^2^, **Rosanna Neuhausler^1^**, Amna Alruheil1 and William F. Maier^1^ <br>
 1. University of California, Berkeley, USA.  2. Delft University of Technology, Netherlands
 
 <center>**Selected Publications**</center>
