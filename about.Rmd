@@ -17,10 +17,7 @@ title: ""
 
 Hello,
 
-Once again, welcome to my website. You have arrived here either because you are
-interested in working with me or because you heard of the cool easter eggs (that at
-the time of me writing this have yet to be coded up) that are hidden throughout the site. 
-Regardless, please enjoy my following mini-autobiography:
+Once again, welcome to my website. Please enjoy my following mini-autobiography:
 
 
 <div class="row" style="padding-top: 30px;">
@@ -44,7 +41,7 @@ these fields in unison.
 As mentioned earlier, I am now a graduate student. Specifically, I am working
 towards [Ph.D. in Geography, Earth System Science](http://geography.berkeley.edu/graduate-studies/program-description/) (still at Berkeley) while concurrently taking part in a two-year National Science Foundation [Data Science program](http://ds421.berkeley.edu/).
 As you may wonder, now that you know I am a geographer: yes, I do produce maps. Though
-I should note: these maps are rather complimentary to my research than my main product. //
+I should note: these maps are rather complimentary to my research than my main product. What I am mainly focusing on is quantifying relationships within socio-enviornmental coastal marine systems as a way to observe changes to coral reefs.//
 Cheers!
 
 </div>
