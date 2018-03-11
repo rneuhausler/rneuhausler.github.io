@@ -44,11 +44,19 @@ Contributed to numerous projects via presentation preparation and CAD drawings
 
 <center>**Research**</center>
 <br>
-**Modeling for the Moorea Island Digital Ecosystem Avatar (Oxford, UK)**      05/2016 - Present <br>
+
+**Utilizing Remote Sensing techniques in Regime Shift Studies** 	      08/2016 - present <br> 
+Detecting environmental regime shifts in reefs from coral to algae dominated states with remote
+sensed data.<br> 
+Applying concepts from information theory and complexity theory to determine main
+actors in costal Island socio-environmental systems.
+
+
+**Modeling for the Moorea Island Digital Ecosystem Avatar (Oxford, UK)**      06/2016 - 07/2016 <br>
 Contributing to the Moorea IDEA, a multi-university initiative striving to advance complex systems modeling at the socio-environmental interface. <br>
 In collaboration with Dr. Maria Bruna and  Dr. Martin Robinson, spent five weeks over the summer at Oxford University creating a stochastic spatio-temporal model of coral cover as a function of various environmental inputs.
 
-**Salmon Creek Endmember Analysis: Methodological Comparison**	     10/2016 - Present <br>
+**Salmon Creek Endmember Analysis: Methodological Comparison**	     10/2016 - 03/2017 <br>
 Comparing stable isotopes and fluorescence in their ability to discriminate between different sources of water within a catchment.
 In collaboration with Prof. Laurel Larsen, continuing her initial research on the role of riparian zones in stream water through the combination of flourescence spectroscopy and end member mixing analysis. 
 
@@ -94,7 +102,7 @@ Yang Ju^1^, Wei-Chen Hsu^1^, John D. Radke^1^, William L. Fourt^1^, Wei Lang^1^,
 Y. Ju, W. Hsu, J. Radke, W. Fourt, W. Lang, O. Hoes, H. Foster, G. Biging, M. Schmidt-Poolman, R. Neuhausler, A. Alruheil, W. Maier. (2016) <br> Planning for the Change: Mapping Sea Level Rise and Storm Inundation in Sherman Island Using 3Di Hydrodynamic Model and LiDAR. In: Thakuriah P., Tilahun N., Zellner M. (eds) Seeing Cities Through Big Data. Springer Geography. Springer, Cham. [707 downloads on link.spring.com,11/17]
 
 <center>**Clubs and Competitions**</center>
-
+<br>
 **Cal EnviroTeam** | Treasurer/Member | 2015 <br>
 Designed a water filtration system to compete in the annual water treatment competition at the ASCE Mid-Pacific Student Conference. <br>
 As treasurer, was in charge of managing the organizations funds. <br>
