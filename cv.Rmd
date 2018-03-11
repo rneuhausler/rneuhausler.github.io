@@ -39,7 +39,7 @@ Wrote a MATLAB script and functions that semi-automated the process for calculat
 In the process of writing the code, I taught myself how to code and how to explain code to the architecture majors that then used it. 
 
 **Arndt Geiger Herrmann Architecture Firm (Zurich, Switzerland)** 	      06/2013 - 08/2013 <br>
-Designed interior features for an $8 million house on CAD software.
+Designed interior features for an $8 million house on CAD software. <br>
 Contributed to numerous projects via presentation preparation and CAD drawings
 
 <center>**Research**</center>
