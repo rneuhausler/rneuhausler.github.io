@@ -34,13 +34,13 @@ Civil & Environmental Engineering System Analysis -- The City: Theory & Methods 
 <center>**Internships**</center>
 <br>
 **Cal Energy Corps: Urban Climate Study (NT, Hong Kong)** 		      06/2015 - 08/2015 <br>
-As part of the Cal Energy Corps internship program, semi-automated step in research process for Edward Ng, at the Chinese University of Hong Kong.
-Wrote a MATLAB script and functions that semi-automated the process for calculating view factors of various enveloping structural and natural surfaces onto a central point from fisheye images. 
+As part of the Cal Energy Corps internship program, semi-automated step in research process for Edward Ng, at the Chinese University of Hong Kong. <br>
+Wrote a MATLAB script and functions that semi-automated the process for calculating view factors of various enveloping structural and natural surfaces onto a central point from fisheye images. <br>
 In the process of writing the code, I taught myself how to code and how to explain code to the architecture majors that then used it. 
 
 **Arndt Geiger Herrmann Architecture Firm (Zurich, Switzerland)** 	      06/2013 - 08/2013 <br>
 Designed interior features for an $8 million house on CAD software. <br>
-Contributed to numerous projects via presentation preparation and CAD drawings
+Contributed to numerous projects via presentation preparation and CAD drawings.
 
 <center>**Research**</center>
 <br>
@@ -63,11 +63,11 @@ In collaboration with Prof. Laurel Larsen, continuing her initial research on th
 **Fluvial Geomorphology, Everglades Study** 		 	   	      07/2014 - 05/2015 <br>
 Research assistant for Laurel Larsen, professor in the Geography Department, UC Berkeley. <br>
 Manipulating a provided MATLAB code to perform noise reduction on flow rate data that was then used to determine bed shear stresses for calculating sediment transport. <br>
-Compared to observations from Acoustic Doppler Velocimeter (ADV) data, viewed via Vectrino Profiler playback <br>
+Compared to observations from Acoustic Doppler Velocimeter (ADV) data, viewed via Vectrino Profiler playback. <br>
 
 **Flood Inundation Simulations of the Bay Area and Sacramento Delta**
 03/2014 - 03/2015 <br>
-Research assistant for John Radke, professor in Landscape Architecture Department, UC Berkeley <br>
+Research assistant for John Radke, professor in Landscape Architecture Department, UC Berkeley. <br>
 Prepared terrestrial spatial data used in simulating the 100-year storm impact, at various predicted Sea-Level Rise stages, on the California Coast, San Francisco Bay Area, and San Joaquin Delta. <br>
 Gathered data through LiDar Analyst tools, & digitizing, and contacting local government agencies. Managed and processed data in multi-server network. <br>
 
