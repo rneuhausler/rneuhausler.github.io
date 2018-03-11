@@ -2,6 +2,7 @@
 title: ""
 ---
 
+
 <center>**Education**</center>
 <br>
 **University of California, Berkeley** <br>
@@ -14,7 +15,7 @@ B.A. Urban Studies <br>
 
 <center>**Skills**</center>
 <br>
-**Computer**: Python, R, MATLAB, Git, LaTeX, ArcGIS, AdobePhotoshop, AutoCAD, Currently learning D3.js, C++, and Google Earth Engine. <br>
+**Computer**: Python, R, MATLAB, Git, LaTeX, ArcGIS, AdobePhotoshop, AutoCAD, C++, and Google Earth Engine. Currently learning D3.js. <br>
 **Language**: English, Swiss-German, and German. Currently learning French.
 
 ---------
@@ -81,3 +82,8 @@ Yang Ju^1^, Wei-Chen Hsu^1^, John D. Radke^1^, William L. Fourt^1^, Wei Lang^1^,
 <center>**Selected Publications**</center>
 <br>
 Y. Ju, W. Hsu, J. Radke, W. Fourt, W. Lang, O. Hoes, H. Foster, G. Biging, M. Schmidt-Poolman, R. Neuhausler, A. Alruheil, W. Maier. (2016) <br> Planning for the Change: Mapping Sea Level Rise and Storm Inundation in Sherman Island Using 3Di Hydrodynamic Model and LiDAR. In: Thakuriah P., Tilahun N., Zellner M. (eds) Seeing Cities Through Big Data. Springer Geography. Springer, Cham. [707 downloads on link.spring.com,11/17]
+
+<center>**Awards and Grants**</center>
+
+
+
