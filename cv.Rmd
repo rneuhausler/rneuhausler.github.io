@@ -2,7 +2,7 @@
 title: ""
 ---
 
-
+<br>
 <center>**Education**</center>
 <br>
 **University of California, Berkeley** <br>
@@ -13,9 +13,19 @@ NSF Research Traineeship Program: Data Sciences for the 21st Century <br>
 B.S. Conservation and Resource Studies, focus: Water Systems Engineering <br>
 B.A. Urban Studies <br>
 
+<center>**Select Coursework**</center>
+<br>
+**Graduate**:
+Statistical Models: Theory & Application -- Statistics & Multivariate Data Analysis for Research -- Topics in Earth System Remote Sensing -- Collaborative & Reproducible Data Science -- Interdisciplinary Research Methods: Environment,
+Society, & Global Change --  Complex Environmental Systems -- Numerical Methods for Environmental Flow Modeling
+
+**Undergraduate**:
+Civil & Environmental Engineering System Analysis -- The City: Theory & Methods in Urban Studies -- Geographic Information Systems -- Environmental Problem Solving -- Water Chemistry -- Fluid Mechanics -- Linear Algebra and Differential Equations
+<br>
+
 <center>**Skills**</center>
 <br>
-**Computer**: Python, R, MATLAB, Git, LaTeX, ArcGIS, AdobePhotoshop, AutoCAD, C++, and Google Earth Engine. Currently learning D3.js. <br>
+**Technical**: Python, R, MATLAB, Git, LaTeX, ArcGIS, AdobePhotoshop, AutoCAD, C++, and Google Earth Engine. Currently learning D3.js. <br>
 **Language**: English, Swiss-German, and German. Currently learning French.
 
 ---------
@@ -64,26 +74,44 @@ Berkeley Conference Travel Grant | 12/2017 <br>
 <br>
 **AGU Ocean Sciences Meeting** February 11-16th, 2018 <br>
 Assessing social vulnerabilities to potential Superfund site failures from coastal storm surge in the United States <br>
-**Rosanna Neuhausler^1^**, Jacob Jean Bukoski^2^, and Adam Orford^3^.
+*Rosanna Neuhausler^1^*, Jacob Jean Bukoski^2^, and Adam Orford^3^. <br>
 1. University of California, Berkeley, Department of Geography.
 2. University of California, Berkeley, Department of Environmental Science, Policy, and Management.
 3. University of California, Berkeley, Energy and Resources Group.
 
 **European Coral Reef Symposium, Oxford, UK** 			         December 13-15, 2017 <br>
 Stochastic spatio-temporal model of coral cover as a function of herbivorous grazers, water quality, and coral demographics <br>
-**Rosanna Neuhausler^1^**, Martin Robinson ^2,3^, and Maria Bruna ^2,3^ <br>
+*Rosanna Neuhausler^1^*, Martin Robinson ^2,3^, and Maria Bruna ^2,3^ <br>
 1. University of California, Berkeley, USA.  2. University of Oxford, Computer Science Department 3. University of Oxford, Mathematical Institute
 
 **Workshops on Big Data and Urban Informatics, Chicago, IL ** 		   August 11-12, 2014 <br>
 Planning for the Change: Mapping Sea Level Rise and Storm Inundation in Sherman Island Using 3Di Hydrodynamic Model and LiDAR <br>
-Yang Ju^1^, Wei-Chen Hsu^1^, John D. Radke^1^, William L. Fourt^1^, Wei Lang^1^, Olivier Hoes^2^, Howard Foster^1^, Gregory Biging1, Emery Roe^1^, Martine Schmidt-Poolman^2^, **Rosanna Neuhausler^1^**, Amna Alruheil1 and William F. Maier^1^ <br>
+Yang Ju^1^, Wei-Chen Hsu^1^, John D. Radke^1^, William L. Fourt^1^, Wei Lang^1^, Olivier Hoes^2^, Howard Foster^1^, Gregory Biging^1^, Emery Roe^1^, Martine Schmidt-Poolman^2^, *Rosanna Neuhausler^1^*, Amna Alruheil^1^ and William F. Maier^1^ <br>
 1. University of California, Berkeley, USA.  2. Delft University of Technology, Netherlands
 
 <center>**Selected Publications**</center>
 <br>
 Y. Ju, W. Hsu, J. Radke, W. Fourt, W. Lang, O. Hoes, H. Foster, G. Biging, M. Schmidt-Poolman, R. Neuhausler, A. Alruheil, W. Maier. (2016) <br> Planning for the Change: Mapping Sea Level Rise and Storm Inundation in Sherman Island Using 3Di Hydrodynamic Model and LiDAR. In: Thakuriah P., Tilahun N., Zellner M. (eds) Seeing Cities Through Big Data. Springer Geography. Springer, Cham. [707 downloads on link.spring.com,11/17]
 
-<center>**Awards and Grants**</center>
+<center>**Clubs and Competitions**</center>
+
+**Cal EnviroTeam** | Treasurer/Member | 2015 <br>
+Designed a water filtration system to compete in the annual water treatment competition at the ASCE Mid-Pacific Student Conference. <br>
+As treasurer, was in charge of managing the organizations funds. <br>
+
+**Berkeley Water Group IdeaLab** | Creative Director/Member | 2013 - 2014 <br>
+Forum for Berkeley-affiliated individuals from all departments to discuss water-related issues. <br>
+Created posters for our biweekly meetings, which host speakers from water-related fields.<br>
+
+**Global Architecture Brigades** | Member | 2012 - 2013 <br>
+With Berkeley chapter, won rain harvest system design competition in fall 2012.<br>
+Flew to Honduras with teammates to construct our design.<br>
+
+**Pioneer High School Track and Cross Country team** | Co-captaion/Teammate | 2008-2012 <br>
+Led workouts, organized team events, motivated and supported teammates. <br>
+Won states titles in 4 x 800 meter relay and regional titles in 5 kilometer and 800 meter races. <br>
+Continuing to race in long distance races today. I finished first out of all the women in the 2016 Napa Wine Country Half Marathon and am training regularly with friends.
+
 
 
 
