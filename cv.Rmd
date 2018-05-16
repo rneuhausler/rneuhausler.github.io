@@ -1,5 +1,6 @@
 ---
-title: ""
+title: ''
+output: pdf_document
 ---
 
 <br>
@@ -20,7 +21,7 @@ Statistical Models: Theory & Application -- Statistics & Multivariate Data Analy
 Society, & Global Change --  Complex Environmental Systems -- Numerical Methods for Environmental Flow Modeling
 
 **Undergraduate**:
-Civil & Environmental Engineering System Analysis -- The City: Theory & Methods in Urban Studies -- Geographic Information Systems -- Environmental Problem Solving -- Water Chemistry -- Fluid Mechanics -- Linear Algebra and Differential Equations
+Civil & Environmental Engineering System Analysis -- The City: Theory & Methods in Urban Studies -- Geographic Information Systems -- Environmental Problem Solving -- Water Chemistry -- Fluid Mechanics -- Linear Algebra and Differential Equations -- Introduction to Statistics -- Water in Terrestrial Environments
 <br>
 
 <center>**Skills**</center>
@@ -45,16 +46,13 @@ Contributed to numerous projects via presentation preparation and CAD drawings.
 <center>**Research**</center>
 <br>
 
-**Utilizing Remote Sensing techniques in Regime Shift Studies** 	      08/2016 - present <br> 
-Detecting environmental regime shifts in reefs from coral to algae dominated states with remote
-sensed data.<br> 
-Applying concepts from information theory and complexity theory to determine main
-actors in costal Island socio-environmental systems.
+**Invesigating critical timescales of water storage and discharge **    05/2018 - present <br>
+Resolving critical timescales over which hydroclimatic variables influence discharge, as well as the significance of their influence on discharge, in the Sagehen Creek watershed within the Sierra Nevada. Observing the watershed as a noisy, nonlinear system of many interacting variables, I will be using information theory statistics for performing causal inference. This research is being conducted as part of a multi-watershed study led by the Environmental System Dynamics Lab at UC Berkeley. <br>
 
+**Comparing discrepancies between social vulnerability indicies associated with Superfund Sites based on varying methods of spatial overlay and resampling** 09/2017 - present  <br>	        	          Analyzing perceived socially vulnerable groups at risk of superfund site failures based on different methodologies used when combining the social data at the census block level with superfund sites represented as spatial point files. This research is conducted with a fellow graduate student in the NSF Data Science Research program, Jacob Bukoski, as a capstone project for the program. <br>
 
-**Modeling for the Moorea Island Digital Ecosystem Avatar (Oxford, UK)**      06/2016 - 07/2016 <br>
-Contributing to the Moorea IDEA, a multi-university initiative striving to advance complex systems modeling at the socio-environmental interface. <br>
-In collaboration with Dr. Maria Bruna and  Dr. Martin Robinson, spent five weeks over the summer at Oxford University creating a stochastic spatio-temporal model of coral cover as a function of various environmental inputs.
+**Stochastic spatio-temporal modelling of marine benthic coverages as a function of herbivourous grazers, water quality, and coral demographics (Oxford, UK)** 06/2016 - 07/2016 <br>
+In collaboration with Dr. Maria Bruna and Dr. Martin Robinson, spent five weeks over the summer at the University of Oxford creating a model of marine benthic coverages, using a python front end and C++ backend simulation software, Aboria, to investigate meta-stability between ecological regime shifts. <br>
 
 **Salmon Creek Endmember Analysis: Methodological Comparison**	     10/2016 - 03/2017 <br>
 Comparing stable isotopes and fluorescence in their ability to discriminate between different sources of water within a catchment.
@@ -73,6 +71,7 @@ Gathered data through LiDar Analyst tools, & digitizing, and contacting local go
 
 <center>**Awards and Grants**</center>
 <br>
+ISEECI Summer Research Grant | 06/2018 - 08/2018 <br>
 EWJ Gateway Fellowship | 08/2016 - 05/2017 <br>
 NSF Research Traineeship Fellowship | 06/2017 - 06/2018 <br>
 Hong Kong PhD Fellowship Scheme (did not accept) | 08/2016 - 08/2019 <br>
