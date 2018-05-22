@@ -47,16 +47,14 @@ Contributed to numerous projects via presentation preparation and CAD drawings.
 <br>
 
 **Investigating critical timescales of water storage and discharge **    05/2018 - present <br>
-Resolving critical timescales over which hydroclimatic variables influence discharge, as well as the significance of their influence on discharge, in the Sagehen Creek watershed within the Sierra Nevada. Observing the watershed as a noisy, nonlinear system of many interacting variables, I will be using information theory statistics for performing causal inference. This research is being conducted as part of a multi-watershed study led by the Environmental System Dynamics Lab at UC Berkeley. <br>
+Resolving critical timescales over which hydroclimatic variables influence discharge, as well as the significance of their influence on discharge, in the Sagehen Creek watershed within the Sierra Nevada. Observing the watershed as a noisy, nonlinear system of many interacting variables, will be using information theory statistics for performing causal inference. Conducted as part of a multi-watershed study led by the Environmental System Dynamics Lab at UC Berkeley. <br>
 
-**Comparing discrepancies between social vulnerability indicies associated with Superfund Sites based on varying methods of spatial overlay and resampling** 09/2017 - present  <br>	        	          Analyzing perceived socially vulnerable groups at risk of superfund site failures based on different methodologies used when combining the social data at the census block level with superfund sites represented as spatial point files. This research is conducted with a fellow graduate student in the NSF Data Science Research program, Jacob Bukoski, as a capstone project for the program. <br>
+**Comparing discrepancies between social vulnerability indicies associated with Superfund Sites based on varying methods of spatial overlay and resampling** 09/2017 - present  <br>	        	          
+Analyzing perceived socially vulnerable groups at risk of superfund site failures based on different methodologies used when combining the social data at the census block level with superfund sites represented as spatial point files. Conducted with a fellow graduate student in the NSF Data Science Research program, Jacob Bukoski, as a capstone project for the program. <br>
 
 **Stochastic spatio-temporal modelling of marine benthic coverages as a function of herbivourous grazers, water quality, and coral demographics (Oxford, UK)** 06/2016 - 07/2016 <br>
 In collaboration with Dr. Maria Bruna and Dr. Martin Robinson, spent five weeks over the summer at the University of Oxford creating a model of marine benthic coverages, using a python front end and C++ backend simulation software, Aboria, to investigate meta-stability between ecological regime shifts. <br>
 
-**Salmon Creek Endmember Analysis: Methodological Comparison**	     10/2016 - 03/2017 <br>
-Comparing stable isotopes and fluorescence in their ability to discriminate between different sources of water within a catchment.
-In collaboration with Prof. Laurel Larsen, continuing her initial research on the role of riparian zones in stream water through the combination of flourescence spectroscopy and end member mixing analysis. 
 
 **Fluvial Geomorphology, Everglades Study** 		 	   	      07/2014 - 05/2015 <br>
 Research assistant for Laurel Larsen, professor in the Geography Department, UC Berkeley. <br>
@@ -80,28 +78,34 @@ Berkeley Conference Travel Grant | 12/2017 <br>
 <center>**Conference Talks**</center>
 <br>
 **AGU Ocean Sciences Meeting** February 11-16th, 2018 <br>
-Assessing social vulnerabilities to potential Superfund site failures from coastal storm surge in the United States <br>
-*Rosanna Neuhausler^1^*, Jacob Jean Bukoski^2^, and Adam Orford^3^. <br>
+*Assessing social vulnerabilities to potential Superfund site failures from coastal storm surge in the United States* <br>
+**Rosanna Neuhausler^1^**, Jacob Jean Bukoski^2^, and Adam Orford^3^. <br>
 1. University of California, Berkeley, Department of Geography.
 2. University of California, Berkeley, Department of Environmental Science, Policy, and Management.
 3. University of California, Berkeley, Energy and Resources Group.
 
 **European Coral Reef Symposium, Oxford, UK** 			         December 13-15, 2017 <br>
-Stochastic spatio-temporal model of coral cover as a function of herbivorous grazers, water quality, and coral demographics <br>
-*Rosanna Neuhausler^1^*, Martin Robinson ^2,3^, and Maria Bruna ^2,3^ <br>
+*Stochastic spatio-temporal model of coral cover as a function of herbivorous grazers, water quality, and coral demographics* <br>
+**Rosanna Neuhausler^1^**, Martin Robinson ^2,3^, and Maria Bruna ^2,3^ <br>
 1. University of California, Berkeley, USA.  2. University of Oxford, Computer Science Department 3. University of Oxford, Mathematical Institute
 
 **Workshops on Big Data and Urban Informatics, Chicago, IL ** 		   August 11-12, 2014 <br>
-Planning for the Change: Mapping Sea Level Rise and Storm Inundation in Sherman Island Using 3Di Hydrodynamic Model and LiDAR <br>
-Yang Ju^1^, Wei-Chen Hsu^1^, John D. Radke^1^, William L. Fourt^1^, Wei Lang^1^, Olivier Hoes^2^, Howard Foster^1^, Gregory Biging^1^, Emery Roe^1^, Martine Schmidt-Poolman^2^, *Rosanna Neuhausler^1^*, Amna Alruheil^1^ and William F. Maier^1^ <br>
+*Planning for the Change: Mapping Sea Level Rise and Storm Inundation in Sherman Island Using 3Di Hydrodynamic Model and LiDAR* <br>
+Yang Ju^1^, Wei-Chen Hsu^1^, John D. Radke^1^, William L. Fourt^1^, Wei Lang^1^, Olivier Hoes^2^, Howard Foster^1^, Gregory Biging^1^, Emery Roe^1^, Martine Schmidt-Poolman^2^, **Rosanna Neuhausler^1^**, Amna Alruheil^1^ and William F. Maier^1^ <br>
 1. University of California, Berkeley, USA.  2. Delft University of Technology, Netherlands
 
 <center>**Selected Publications**</center>
 <br>
 Y. Ju, W. Hsu, J. Radke, W. Fourt, W. Lang, O. Hoes, H. Foster, G. Biging, M. Schmidt-Poolman, R. Neuhausler, A. Alruheil, W. Maier. (2016) <br> Planning for the Change: Mapping Sea Level Rise and Storm Inundation in Sherman Island Using 3Di Hydrodynamic Model and LiDAR. In: Thakuriah P., Tilahun N., Zellner M. (eds) Seeing Cities Through Big Data. Springer Geography. Springer, Cham. 1.2K downloads on [link.spring.com](https://link.springer.com/chapter/10.1007/978-3-319-40902-3_18)
 
-<center>**Clubs and Competitions**</center>
+<center>**Leadership and Competition**</center>
 <br>
+
+**Sagehen Data Camp** | Organizer/Leader | 2018 <br>
+Leading a team of undergraduates to the UC Natural Reserve, Sagehen Creek Field Station, for
+a week long data organizing, processing, and analyzing bootcamp as an effort to expose
+students to field work and data science, as well as a revamping of the site.<br>
+
 **Cal EnviroTeam** | Treasurer/Member | 2015 <br>
 Designed a water filtration system to compete in the annual water treatment competition at the ASCE Mid-Pacific Student Conference. <br>
 As treasurer, was in charge of managing the organizations funds. <br>
