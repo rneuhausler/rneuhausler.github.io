@@ -40,6 +40,13 @@ We created this website to present some of the stories - visualize the voices - 
 </p>
 
 
+<h1> IN PROGRESS </h1>
+
+<h1> COME BACK BY THE END OF OCTOBER 18TH </h1>
+
+
+
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -47,6 +54,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ```{r echo=FALSE}
 #install.packages("dygraphs")
+
 ```
 
 ```{r echo=FALSE, message=FALSE}
@@ -54,14 +62,14 @@ library(dplyr)
 library(tidyverse)
 library(ggplot2)
 library(xts)
-#library(quantmod)
 library(dygraphs)
+library(RColorBrewer)
 
-#library(rCharts)
 ```
 
 
-<h2> Arsenic (and Nitrate) in Arvin's water </h2>
+
+
 
 
 
@@ -73,9 +81,17 @@ path = 'visualizing_voices/data/'
 phrases = read.csv(paste0(path,'phrase.csv'))
 water_board = read.csv(paste0(path,'hr2w_web_data_active_8_2018.csv'))
 
+phrases_simple <- read.csv(paste0(path,"arvin_phrases.csv"))
+article_simple <- read.csv(paste0(path,"article_arvin.csv"))
+arsenic <- read.csv(paste0(path,"arsenic.csv"))
+nitrate <- read.csv(paste0(path,"nitrate.csv"))
+lead <- read.csv(paste0(path,"lead.csv"))
+
+
+
+
 ```
 
-<h2> Lead in Fresno </h2>
 
 
 ```{r echo=FALSE}
@@ -88,9 +104,11 @@ phrases$main.city <- sapply(phrases$main.city, tolower)
 water_board$CITY <- sapply(water_board$CITY, tolower)
 overlap2 <- intersect(phrases$main.city, water_board$CITY)
 
-phrases <- phrases %>%
-  filter(main.city %in% overlap2)
+```
 
+
+```{r echo=FALSE, warning=FALSE}
+#SUBSETTING/RENAMING WATER BOARD DATA
 water_board_subset <- water_board %>%
   filter(ANALYTE_NAME %in% pollutants) %>%
   filter(CITY %in% overlap2) %>%
@@ -101,6 +119,7 @@ water_board_subset <- water_board %>%
 
 water_board_subset$pollutant[water_board_subset$pollutant %in% carcinogens] = "CARCINOGEN"
 
+#CLEANING UP DATA UNITS
 water_board_subset$result <- gsub(" MG/L", "", water_board_subset$result)
 water_board_subset$result <- gsub(" PCI/L", "", water_board_subset$result)
 water_board_subset$result <- gsub(" UG/L", "", water_board_subset$result)
@@ -111,25 +130,76 @@ water_board_subset$unit <- gsub("\\d","", water_board_subset$unit)
 water_board_subset$unit <- gsub("[.]","", water_board_subset$unit)
 water_board_subset$unit <- gsub(" ","", water_board_subset$unit)
 
+start <- water_board_subset %>%
+  select(-end) %>%
+  mutate(add = 1, date = start) %>%
+  select(-start)
 
-phrases$main.city <- sapply(phrases$main.city, tolower)
-phrases$date <- as.Date(phrases$date, format="%B %d, %Y")
+end <- water_board_subset %>%
+  select(-start) %>%
+  mutate(add = -1, date = end) %>%
+  select(-end)
 
-plot_wb <- water_board_subset %>%
-  filter(pollutant == "ARSENIC") %>%
-  filter(city == "arvin") %>%
-  transmute(date = start,
-            date2 = end,
-            date3 = action,
-            value = result, 
-            MCL_standard = MCL)
+duration <- bind_rows(start, end)
 
-plot_wb$date <- as.POSIXlt.character(format(as.Date(plot_wb$date, "%m/%d/%y"),
+duration$date <- as.POSIXlt.character(format(as.Date(duration$date, "%m/%d/%y"),
                                             "20%y-%m-%d"))
 
 
+#duration <- duration %>%
+#  order(date) 
+
+
+
+#%>%
+ # aggregate(add, FUN = sum)
+
+
+
+
+
+
+
+
+
+#sapply(water_board_subset, class)
+```
+
+```{r echo=FALSE, warning=FALSE} 
+phrases <- phrases %>%
+  filter(main.city %in% overlap2)
+
+phrases$main.city <- sapply(phrases$main.city, tolower)
+phrases$date <- as.Date(phrases$date, format="%B %d, %Y")  
 
 ```
+
+
+<h2> Pollutant Count and Overlap (I.P.) </h2>
+
+
+```{r echo = FALSE, fig.dim = c(9, 3), warning=FALSE}
+water_board_subset %>%
+  ggplot() +
+  geom_bar(aes(city, fill = pollutant))+
+  theme_minimal() +
+  scale_fill_manual(values=brewer.pal(n = 5, name = "PiYG")) +
+  ylim(c(0,150))
+```
+
+
+```{r echo = FALSE, fig.dim = c(9, 3), warning=FALSE}
+phrases %>%
+  ggplot() +
+  geom_bar(aes(main.city, fill = contaminant))+
+  theme_minimal() +
+  scale_fill_manual(values=brewer.pal(n = 6, name = "PiYG"))+
+  ylim(c(0,150))
+```
+
+
+<h2> Arsenic (and Nitrate) in Arvin's water </h2>
+
 
 
 ```{r echo=FALSE, fig.dim = c(9, 4)}
@@ -164,8 +234,33 @@ dygraph(series, main = "Arsenic in Arvin") %>%
   dyRangeSelector()
 ```
 
+```{r echo=FALSE, fig.dim = c(9, 4), eval=FALSE}
 
-```{r echo=FALSE, fig.dim = c(9, 4)}
+arsenic
+
+datetimes <- arsenic$date
+values <- plot_wb$value
+MCL <- plot_wb$MCL_standard
+value_seen <- xts(values, order.by = datetimes)
+value_mcl <- xts(MCL, order.by = datetimes)
+series = cbind(value_seen, value_mcl)
+
+
+dygraph(series, main = "Arsenic in Arvin") %>%
+  dyOptions(colors = RColorBrewer::brewer.pal(3, "Set1"),
+            axisLineWidth = 1.5, 
+            axisLineColor = "lightgrey", 
+            gridLineColor = "lightgrey") %>%
+  dyAxis("y", label = "Arsenic Levels (MG/L)") %>%
+  dyLegend(show = "follow")%>% 
+  dyRangeSelector()
+
+
+
+```
+
+
+```{r echo=FALSE, fig.dim = c(9, 4), eval=FALSE}
 
 plot_wb <- water_board_subset %>%
   filter(pollutant == "ARSENIC") %>%
@@ -229,34 +324,10 @@ dygraph(dyData) %>%
 ```
 
 
-```{r echo = FALSE, fig.dim = c(9, 3)}
-water_board_subset %>%
-  ggplot() +
-  geom_bar(aes(city, fill = pollutant))+
-  theme_minimal()
-```
 
 
-```{r echo = FALSE, fig.dim = c(9, 3)}
-phrases %>%
-  ggplot() +
-  geom_bar(aes(main.city, fill = contaminant))+
-  theme_minimal()
-```
 
+<h2> Lead in Fresno </h2>
 
-```{r libraries}
-#library(shiny)
-#library(leaflet)
-#library(rgdal)
-#library(RColorBrewer)
-#library(dplyr)
-#library(sf)
-#library(tidyverse)
-#library(ggmap)
-#library(ggplot2)
-#library(stringr)
-#library(scales)
-```
 
 
