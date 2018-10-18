@@ -1,6 +1,5 @@
 ---
 title: Visualizing Voices
-date: "10/14/2018"
 output:
   html_document:
       theme: null
@@ -10,7 +9,6 @@ output:
       toc_depth: 2
       css: visualizing_voices/code/visualizing_voices.css
       smooth_scroll: TRUE
-runtime: shiny
 ---
 
 <head>
@@ -22,9 +20,16 @@ runtime: shiny
 
 
         
-<h3> Intro </h3>
+<h3> Water as a Human Right </h3>
 <p>
 In 2012, California became the first state in the United States to recognize the human right to clean, affordable water (Assembly Bill 685). Now California recognizes that, “every human being has the right to safe, clean, affordable, and accessible water adequate for human consumption, cooking, and sanitary purposes.” (Water Code Section 106.3) The State Water Board made it a top priority to provide all humans their right to water through actions such as: "revising or establishing water quality control plans, policies, and grant critera; permitting; site remediation and monitoring; and water right administration." (CA Water Boards) 
+</p>
+<p>
+The first step in developing new water systems is to first locate communities that do not have safe, clean water for drinking, cooking, and sanitary uses. While access to safe, clean water is now identified as a basic human right, over one million Californians are exposed to unsafe drinking water each year (Community Water Center). We found that there were data gaps in the California Water Boards data that tended to be small communities of low-income and therefore communities with little political voice. 
+</p>
+<h3> Filling the Gaps </h3>
+<p>
+The goal of Visualizing Voices is to make use of non-profit journalism to help identify where in space and when in time water systems in low-income communities have unacceptable water quality. We created a webscraper to identify key words or phrases to find relevant blog posts on the Community Water Center's website. From these blog posts, we run the webpage's HTML through a filter that contains the names of California cities to get a list of cities that the Community Water Center has published water quality data that is below compliance. This website compares the compliance data from the Community Water Board webscraping with the California Water Boards open source data for cities serviced by the Community Water Center (Arvin, Cutler, Ducor, East Orosi, East Porterville, Lamont, Monson, Poplar, Seville, and West Goshen). We hope that this model can be used to include other non-profit water justice organizations, to make use of the people's voices to locate those who are in need.
 </p> 
 
 ```{r setup, include=FALSE}
@@ -32,39 +37,26 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 
-
-```{r libraries}
-library(shiny)
-library(leaflet)
-library(rgdal)
-library(RColorBrewer)
-library(dplyr)
-library(sf)
-library(tidyverse)
-library(ggmap)
-library(ggplot2)
-library(stringr)
-library(scales)
+```{r echo=FALSE}
+#install.packages("dygraphs")
 ```
 
-
-```{r}
-#require(devtools)
-#install_github('ramnathv/rCharts')
-```
-
-```{r}
+```{r echo=FALSE, message=FALSE}
 library(dplyr)
 library(tidyverse)
 library(ggplot2)
-library(rCharts)
+library(xts)
+#library(quantmod)
+library(dygraphs)
+
+#library(rCharts)
 ```
 
 
 
 
 
-```{r}
+```{r echo=FALSE}
 setwd("/Users/rosannaneuhausler/Documents/Website/rneuhausler.github.io")
 path = 'visualizing_voices/data/'
 
@@ -83,7 +75,6 @@ pollutants = c("ARSENIC", "URANIUM-238", "COMBINED URANIUM", "NITRATE", "1,2-DIB
 
 phrases$main.city <- sapply(phrases$main.city, tolower)
 water_board$CITY <- sapply(water_board$CITY, tolower)
-
 overlap2 <- intersect(phrases$main.city, water_board$CITY)
 
 phrases <- phrases %>%
@@ -114,27 +105,79 @@ phrases$main.city <- sapply(phrases$main.city, tolower)
 phrases$date <- as.Date(phrases$date, format="%B %d, %Y")
 
 plot_wb <- water_board_subset %>%
-  filter(pollutant == "NITRATE") %>%
-  transmute(date = start, value = result)
+  filter(pollutant == "ARSENIC") %>%
+  filter(city == "arvin") %>%
+  transmute(date = start,
+            date2 = end,
+            date3 = action,
+            value = result, 
+            MCL_standard = MCL)
 
 plot_wb$date <- format(as.Date(plot_wb$date, "%m/%d/%y"), "20%y-%m-%d")
 plot_wb$date <- as.POSIXlt.character(plot_wb$date)
 
-```
-
-
-```{r}
-
-#data(economics, package = "ggplot2")
-econ <- transform(economics, date = as.character(date))
-
-m1 <- water_board_subset %>%
-  mPlot(x = "start", y = c("result", "MCL"), type = "Line")
-m1$set(pointSize = 0, lineWidth = 1)
-m1$print("chart2")
-
 
 ```
 
+
+```{r echo=FALSE, fig.dim = c(9, 4)}
+datetimes <- plot_wb$date
+values <- plot_wb$value
+MCL <- plot_wb$MCL_standard
+value_seen <- xts(values, order.by = datetimes)
+value_mcl <- xts(MCL, order.by = datetimes)
+series = cbind(value_seen, value_mcl)
+
+
+dygraph(series, main = "Arsenic in Arvin") %>%
+  dyOptions(colors = RColorBrewer::brewer.pal(3, "Set1"),
+            axisLineWidth = 1.5, 
+            axisLineColor = "lightgrey", 
+            gridLineColor = "lightgrey") %>%
+  dyAxis("y", label = "Arsenic Levels (MG/L)") %>%
+  dyLegend(show = "follow")%>% 
+  dyRangeSelector()
+
+
+
+```
+
+
+```{r eval=FALSE, echo=FALSE}
+
+## to get the ribbon
+
+difference <- SPY[, "SPY.Open"] - SPY[, "SPY.Close"]
+decreasing <- which(difference < 0)
+increasing <- which(difference > 0)
+
+dyData <- SPY[, "SPY.Close"]
+
+ribbonData <- rep(0, nrow(dyData))
+ribbonData[decreasing] <- 0.5
+ribbonData[increasing] <- 1
+
+dygraph(dyData) %>%
+    dyRibbon(data = ribbonData, top = 0.1, bottom = 0.02)
+
+
+```
+
+
+
+
+```{r libraries}
+#library(shiny)
+#library(leaflet)
+#library(rgdal)
+#library(RColorBrewer)
+#library(dplyr)
+#library(sf)
+#library(tidyverse)
+#library(ggmap)
+#library(ggplot2)
+#library(stringr)
+#library(scales)
+```
 
 
