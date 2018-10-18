@@ -8,16 +8,21 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
 
 
 
 <title>Visualizing Voices</title>
 
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/pagedtable-1.1/css/pagedtable.css" rel="stylesheet" />
 <script src="site_libs/pagedtable-1.1/js/pagedtable.js"></script>
 <script src="site_libs/htmlwidgets-1.2/htmlwidgets.js"></script>
-<script src="site_libs/jquery-1.11.1/jquery.min.js"></script>
 <link href="site_libs/dygraphs-1.1.1/dygraph.css" rel="stylesheet" />
 <script src="site_libs/dygraphs-1.1.1/dygraph-combined.js"></script>
 <script src="site_libs/dygraphs-1.1.1/shapes.js"></script>
@@ -29,25 +34,191 @@
 
 
 
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
 
-<link rel="stylesheet" href="visualizing_voices/code/visualizing_voices.css" type="text/css" />
+<link rel="stylesheet" href="starter.css" type="text/css" />
 
 </head>
 
 <body>
 
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 45px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+
+.section h2 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h3 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h4 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h5 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+.section h6 {
+  padding-top: 50px;
+  margin-top: -50px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Rosanna Neuhausler</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="about.html">About Me</a>
+</li>
+<li>
+  <a href="cv.html">CV</a>
+</li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Projects
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a href="visualizing_voices.html">Visualizing Voices</a>
+    </li>
+  </ul>
+</li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
 
 
 
 <h1 class="title toc-ignore">Visualizing Voices</h1>
 
+</div>
 
 
+<style>
+.navbar{
+  visibility: hidden
+}</style>
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <script src="//d3js.org/d3.v4.min.js"></script>
 </head>
+<p>default, cerulean, journal, flatly, darkly, readable, spacelab, united, cosmo, lumen, paper, sandstone, simplex, and yeti.</p>
 <h3>
 Water as a Human Right
 </h3>
@@ -63,8 +234,8 @@ Filling the Gaps
 <p>
 The goal of Visualizing Voices is to make use of non-profit journalism to help identify where in space and when in time water systems in low-income communities have unacceptable water quality. We created a webscraper to identify key words or phrases to find relevant blog posts on the Community Water Center’s website. From these blog posts, we run the webpage’s HTML through a filter that contains the names of California cities to get a list of cities that the Community Water Center has published water quality data that is below compliance. This website compares the compliance data from the Community Water Board webscraping with the California Water Boards open source data for cities serviced by the Community Water Center (Arvin, Cutler, Ducor, East Orosi, East Porterville, Lamont, Monson, Poplar, Seville, and West Goshen). We hope that this model can be used to include other non-profit water justice organizations, to make use of the people’s voices to locate those who are in need.
 </p>
-<div id="htmlwidget-b09f5d6f927819a592ce" style="width:864px;height:384px;" class="dygraphs html-widget"></div>
-<script type="application/json" data-for="htmlwidget-b09f5d6f927819a592ce">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60,"drawAxis":true},"y":{"drawAxis":true}},"colors":["#E41A1C","#377EB8","#4DAF4A"],"title":"Arsenic in Arvin","labels":["quarter","..1","..2"],"retainDateWindow":false,"stackedGraph":false,"fillGraph":false,"fillAlpha":0.15,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colorValue":0.5,"colorSaturation":1,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"lightgrey","axisLineWidth":1.5,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":60,"drawGrid":true,"gridLineColor":"lightgrey","gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"labelsUTC":false,"maxNumberWidth":6,"animatedZooms":false,"mobileDisableYTouch":true,"disableZoom":false,"ylabel":"Arsenic Levels (MG/L)","legend":"follow","labelsDivWidth":250,"labelsShowZeroValues":true,"labelsSeparateLines":false,"hideOverlayOnMouseOut":true,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"scale":"quarterly","annotations":[],"shadings":[],"events":[],"format":"date","data":[["2012-01-01T00:00:00.000Z","2012-04-01T00:00:00.000Z","2012-07-01T00:00:00.000Z","2012-10-01T00:00:00.000Z","2013-01-01T00:00:00.000Z","2013-04-01T00:00:00.000Z","2013-07-01T00:00:00.000Z","2013-10-01T00:00:00.000Z","2014-01-01T00:00:00.000Z","2014-04-01T00:00:00.000Z","2014-07-01T00:00:00.000Z","2014-10-01T00:00:00.000Z","2015-01-01T00:00:00.000Z","2015-04-01T00:00:00.000Z","2015-07-01T00:00:00.000Z","2015-10-01T00:00:00.000Z","2016-01-01T00:00:00.000Z","2016-04-01T00:00:00.000Z","2016-07-01T00:00:00.000Z","2016-10-01T00:00:00.000Z","2017-01-01T00:00:00.000Z","2017-04-01T00:00:00.000Z","2017-07-01T00:00:00.000Z","2017-10-01T00:00:00.000Z","2018-01-01T00:00:00.000Z","2018-04-01T00:00:00.000Z"],[".03200000",".03170000",".03000000","0.031","0.033","0.033","0.034","0.033","0.033","0.032","0.033","0.030","0.030","0.031","0.030","0.030","0.031","0.031","0.031","0.033","0.040","0.040","0.040","0.041","0.044","0.045"],["0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010"]],"fixedtz":false,"tzone":["","PST","PDT"]},"evals":["attrs.interactionModel"],"jsHooks":[]}</script>
+<div id="htmlwidget-f0f134d29a4a773c1f17" style="width:864px;height:384px;" class="dygraphs html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f0f134d29a4a773c1f17">{"x":{"attrs":{"axes":{"x":{"pixelsPerLabel":60,"drawAxis":true},"y":{"drawAxis":true}},"colors":["#E41A1C","#377EB8","#4DAF4A"],"title":"Arsenic in Arvin","labels":["quarter","..1","..2"],"retainDateWindow":false,"stackedGraph":false,"fillGraph":false,"fillAlpha":0.15,"stepPlot":false,"drawPoints":false,"pointSize":1,"drawGapEdgePoints":false,"connectSeparatedPoints":false,"strokeWidth":1,"strokeBorderColor":"white","colorValue":0.5,"colorSaturation":1,"includeZero":false,"drawAxesAtZero":false,"logscale":false,"axisTickSize":3,"axisLineColor":"lightgrey","axisLineWidth":1.5,"axisLabelColor":"black","axisLabelFontSize":14,"axisLabelWidth":60,"drawGrid":true,"gridLineColor":"lightgrey","gridLineWidth":0.3,"rightGap":5,"digitsAfterDecimal":2,"labelsKMB":false,"labelsKMG2":false,"labelsUTC":false,"maxNumberWidth":6,"animatedZooms":false,"mobileDisableYTouch":true,"disableZoom":false,"ylabel":"Arsenic Levels (MG/L)","legend":"follow","labelsDivWidth":250,"labelsShowZeroValues":true,"labelsSeparateLines":false,"hideOverlayOnMouseOut":true,"showRangeSelector":true,"rangeSelectorHeight":40,"rangeSelectorPlotFillColor":" #A7B1C4","rangeSelectorPlotStrokeColor":"#808FAB","interactionModel":"Dygraph.Interaction.defaultModel"},"scale":"quarterly","annotations":[],"shadings":[],"events":[],"format":"date","data":[["2012-01-01T00:00:00.000Z","2012-04-01T00:00:00.000Z","2012-07-01T00:00:00.000Z","2012-10-01T00:00:00.000Z","2013-01-01T00:00:00.000Z","2013-04-01T00:00:00.000Z","2013-07-01T00:00:00.000Z","2013-10-01T00:00:00.000Z","2014-01-01T00:00:00.000Z","2014-04-01T00:00:00.000Z","2014-07-01T00:00:00.000Z","2014-10-01T00:00:00.000Z","2015-01-01T00:00:00.000Z","2015-04-01T00:00:00.000Z","2015-07-01T00:00:00.000Z","2015-10-01T00:00:00.000Z","2016-01-01T00:00:00.000Z","2016-04-01T00:00:00.000Z","2016-07-01T00:00:00.000Z","2016-10-01T00:00:00.000Z","2017-01-01T00:00:00.000Z","2017-04-01T00:00:00.000Z","2017-07-01T00:00:00.000Z","2017-10-01T00:00:00.000Z","2018-01-01T00:00:00.000Z","2018-04-01T00:00:00.000Z"],[".03200000",".03170000",".03000000","0.031","0.033","0.033","0.034","0.033","0.033","0.032","0.033","0.030","0.030","0.031","0.030","0.030","0.031","0.031","0.031","0.033","0.040","0.040","0.040","0.041","0.044","0.045"],["0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010","0.010"]],"fixedtz":false,"tzone":["","PST","PDT"]},"evals":["attrs.interactionModel"],"jsHooks":[]}</script>
 <pre class="r"><code>#library(shiny)
 #library(leaflet)
 #library(rgdal)
@@ -78,6 +249,22 @@ The goal of Visualizing Voices is to make use of non-profit journalism to help i
 #library(scales)</code></pre>
 
 
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

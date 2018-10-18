@@ -2,14 +2,19 @@
 title: Visualizing Voices
 output:
   html_document:
-      theme: null
+      theme: yeti
       highlight: null
       df_print: paged
       toc: true
       toc_depth: 2
-      css: visualizing_voices/code/visualizing_voices.css
+      #css: visualizing_voices/code/visualizing_voices.css
       smooth_scroll: TRUE
 ---
+
+<style>
+.navbar{
+  visibility: hidden
+}</style>
 
 <head>
     <meta charset="utf-8">
@@ -18,6 +23,7 @@ output:
 </head> 
 
 
+default, cerulean, journal, flatly, darkly, readable, spacelab, united, cosmo, lumen, paper, sandstone, simplex, and yeti.
 
         
 <h3> Water as a Human Right </h3>
