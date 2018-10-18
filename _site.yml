@@ -9,6 +9,10 @@ navbar:
       href: about.html
     - text: "CV"
       href: cv.html
+    - text: "Projects"
+      menu:
+      - text: "Visualizing Voices"
+        href: visualizing_voices.html
 output:
   html_document:
     theme: lumen

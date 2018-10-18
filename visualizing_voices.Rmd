@@ -1,0 +1,140 @@
+---
+title: Visualizing Voices
+date: "10/14/2018"
+output:
+  html_document:
+      theme: null
+      highlight: null
+      df_print: paged
+      toc: true
+      toc_depth: 2
+      css: visualizing_voices/code/visualizing_voices.css
+      smooth_scroll: TRUE
+runtime: shiny
+---
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="//d3js.org/d3.v4.min.js"></script>
+</head> 
+
+
+
+        
+<h3> Intro </h3>
+<p>
+In 2012, California became the first state in the United States to recognize the human right to clean, affordable water (Assembly Bill 685). Now California recognizes that, “every human being has the right to safe, clean, affordable, and accessible water adequate for human consumption, cooking, and sanitary purposes.” (Water Code Section 106.3) The State Water Board made it a top priority to provide all humans their right to water through actions such as: "revising or establishing water quality control plans, policies, and grant critera; permitting; site remediation and monitoring; and water right administration." (CA Water Boards) 
+</p> 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+```{r libraries}
+library(shiny)
+library(leaflet)
+library(rgdal)
+library(RColorBrewer)
+library(dplyr)
+library(sf)
+library(tidyverse)
+library(ggmap)
+library(ggplot2)
+library(stringr)
+library(scales)
+```
+
+
+```{r}
+#require(devtools)
+#install_github('ramnathv/rCharts')
+```
+
+```{r}
+library(dplyr)
+library(tidyverse)
+library(ggplot2)
+library(rCharts)
+```
+
+
+
+
+
+```{r}
+setwd("/Users/rosannaneuhausler/Documents/Website/rneuhausler.github.io")
+path = 'visualizing_voices/data/'
+
+#load data
+phrases = read.csv(paste0(path,'phrase.csv'))
+water_board = read.csv(paste0(path,'hr2w_web_data_active_8_2018.csv'))
+
+```
+
+
+```{r echo=FALSE}
+carcinogens = c("1,2-DIBROMO-3-CHLOROPROPANE", "1,2,3-TRICHLOROPROPANE", "ASBESTOS", "CADMIUM")
+
+pollutants = c("ARSENIC", "URANIUM-238", "COMBINED URANIUM", "NITRATE", "1,2-DIBROMO-3-CHLOROPROPANE",
+              "1,2,3-TRICHLOROPROPANE", "ASBESTOS", "CADMIUM")
+
+phrases$main.city <- sapply(phrases$main.city, tolower)
+water_board$CITY <- sapply(water_board$CITY, tolower)
+
+overlap2 <- intersect(phrases$main.city, water_board$CITY)
+
+phrases <- phrases %>%
+  filter(main.city %in% overlap2)
+
+water_board_subset <- water_board %>%
+  filter(ANALYTE_NAME %in% pollutants) %>%
+  filter(CITY %in% overlap2) %>%
+  transmute(city = as.character(CITY), county = as.character(COUNTY), 
+            pollutant = as.character(ANALYTE_NAME), specific = as.character(ANALYTE_NAME),
+            result = RESULT, MCL = MCL, unit = RESULT,
+            start = VIOL_BEGIN_DATE, end = VIOL_END_DATE, action = ENF_ACTION_ISSUE_DATE)
+
+water_board_subset$pollutant[water_board_subset$pollutant %in% carcinogens] = "CARCINOGEN"
+
+water_board_subset$result <- gsub(" MG/L", "", water_board_subset$result)
+water_board_subset$result <- gsub(" PCI/L", "", water_board_subset$result)
+water_board_subset$result <- gsub(" UG/L", "", water_board_subset$result)
+water_board_subset$MCL <- gsub(" MG/L", "", water_board_subset$MCL)
+water_board_subset$MCL <- gsub(" PCI/L", "", water_board_subset$MCL)
+water_board_subset$MCL <- gsub(" UG/L", "", water_board_subset$MCL)
+water_board_subset$unit <- gsub("\\d","", water_board_subset$unit)
+water_board_subset$unit <- gsub("[.]","", water_board_subset$unit)
+water_board_subset$unit <- gsub(" ","", water_board_subset$unit)
+
+
+phrases$main.city <- sapply(phrases$main.city, tolower)
+phrases$date <- as.Date(phrases$date, format="%B %d, %Y")
+
+plot_wb <- water_board_subset %>%
+  filter(pollutant == "NITRATE") %>%
+  transmute(date = start, value = result)
+
+plot_wb$date <- format(as.Date(plot_wb$date, "%m/%d/%y"), "20%y-%m-%d")
+plot_wb$date <- as.POSIXlt.character(plot_wb$date)
+
+```
+
+
+```{r}
+
+#data(economics, package = "ggplot2")
+econ <- transform(economics, date = as.character(date))
+
+m1 <- water_board_subset %>%
+  mPlot(x = "start", y = c("result", "MCL"), type = "Line")
+m1$set(pointSize = 0, lineWidth = 1)
+m1$print("chart2")
+
+
+```
+
+
+
