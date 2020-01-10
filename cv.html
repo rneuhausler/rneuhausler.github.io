@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -70,9 +71,7 @@ h6 {
 
 <link rel="stylesheet" href="starter.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -86,13 +85,18 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -108,7 +112,6 @@ body {
   padding-top: 59px;
   margin-top: -59px;
 }
-
 .section h2 {
   padding-top: 59px;
   margin-top: -59px;
@@ -128,6 +131,43 @@ body {
 .section h6 {
   padding-top: 59px;
   margin-top: -59px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -149,19 +189,73 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -207,11 +301,15 @@ $(document).ready(function () {
 <center>
 <strong>Education</strong>
 </center>
-<p><br> <strong>University of California, Berkeley</strong> <br> <strong>Graduate GPA: 3.925</strong> 08/2016 - present <br> Ph.D. Geography, Physical<br> Designated Emphasis: Computational and Data Science and Engineering <br> NSF Research Traineeship Program: Data Sciences for the 21st Century <br> <strong>Undergraduate GPA: 3.56</strong> 08/2012 - 05/2016 <br> B.S. Conservation and Resource Studies, focus: Water Systems Engineering <br> B.A. Urban Studies <br></p>
+<p><br> <strong>University of California, Berkeley</strong> <br> <strong>Graduate GPA: 3.93</strong> 08/2016 - present <br> Ph.D. Geography, Earth System Science<br> Designated Emphasis, Computational and Data Science and Engineering <br> NSF Research Traineeship Program: Data Sciences for the 21st Century <br> <strong>Undergraduate GPA: 3.56</strong> 08/2012 - 05/2016 <br> B.S. Conservation and Resource Studies, focus: Water Systems Engineering <br> B.A. Urban Studies <br></p>
+<center>
+<strong>Awards and Grants</strong>
+</center>
+<p><br> NASA NSPIRES Fellowship | 09/2019 - 09/2022 <br> ISEECI Summer Research Grant | 06/2018 - 08/2018 <br> EWJ Gateway Fellowship | 08/2016 - 05/2017 <br> NSF Research Traineeship Fellowship | 06/2017 - 06/2018 <br> Hong Kong PhD Fellowship Scheme (did not accept) | 08/2016 - 08/2019 <br> Berkeley Conference Travel Grant | 12/2017 <br></p>
 <center>
 <strong>Select Coursework</strong>
 </center>
-<p><br> <strong>Graduate</strong>: Statistical Models: Theory &amp; Application – Statistics &amp; Multivariate Data Analysis for Research – Topics in Earth System Remote Sensing – Collaborative &amp; Reproducible Data Science – Advanced Topics in Computer Systems - Interdisciplinary Research Methods: Environment, Society, &amp; Global Change – Complex Environmental Systems – Numerical Methods for Environmental Flow Modeling</p>
+<p><br> <strong>Graduate</strong>: Statistical Models: Theory &amp; Application – Statistics &amp; Multivariate Data Analysis for Research – Topics in Earth System Remote Sensing – Collaborative &amp; Reproducible Data Science – Advanced Topics in Computer Systems – Interdisciplinary Research Methods: Environment, Society, &amp; Global Change – Complex Environmental Systems – Numerical Methods for Environmental Flow Modeling</p>
 <p><strong>Undergraduate</strong>: Civil &amp; Environmental Engineering System Analysis – The City: Theory &amp; Methods in Urban Studies – Geographic Information Systems – Environmental Problem Solving – Water Chemistry – Fluid Mechanics – Linear Algebra and Differential Equations – Introduction to Statistics – Water in Terrestrial Environments <br></p>
 <center>
 <strong>Skills</strong>
@@ -227,22 +325,24 @@ $(document).ready(function () {
 <strong>Research</strong>
 </center>
 <p><br></p>
-<p><strong>Remote sensing for coral-algal phase shifts </strong> 02/2018 - present <br> Detecting environmental regime shifts in reefs from coral to algae dominated states with remote sensed data. Applying concepts from information theory and complexity theory to determine main actors in costal Island socio-environmental systems. <br></p>
-<p><strong>Investigating critical timescales of water storage and discharge </strong> 05/2018 - present <br> Resolving critical timescales over which hydroclimatic variables influence discharge, as well as the significance of their influence on discharge, in the Sagehen Creek watershed within the Sierra Nevada. Observing the watershed as a noisy, nonlinear system of many interacting variables, will be using information theory statistics for performing causal inference. Conducted as part of a multi-watershed study led by the Environmental System Dynamics Lab at UC Berkeley. <br></p>
-<p><strong>Comparing discrepancies between social vulnerability indicies associated with Superfund Sites based on varying methods of spatial overlay and resampling</strong> 09/2017 - present <br> Analyzing perceived socially vulnerable groups at risk of superfund site failures based on different methodologies used when combining the social data at the census block level with superfund sites represented as spatial point files. Conducted with a fellow graduate student in the NSF Data Science Research program, Jacob Bukoski, as a capstone project for the program. <br></p>
-<p><strong>Stochastic spatio-temporal modelling of marine benthic coverages as a function of herbivourous grazers, water quality, and coral demographics (Oxford, UK)</strong> 06/2016 - 07/2016 <br> In collaboration with Dr. Maria Bruna and Dr. Martin Robinson, spent five weeks over the summer at the University of Oxford creating a model of marine benthic coverages, using a python front end and C++ backend simulation software, Aboria, to investigate meta-stability between ecological regime shifts. <br></p>
+<p><strong>Remote sensing for Coral Bleaching Prediction</strong> 06/2019 - present <br> Detecting potential spatial determinants of coral bleaching using in-situ and remotely sensed data from across the Pacific Ocean. <br></p>
+<p><strong>Investigating critical timescales of water storage and discharge </strong> 05/2018 - present <br> Resolving critical timescales over which hydroclimatic variables influence discharge, as well as the significance of their influence on discharge, in the Sagehen Creek watershed within the Sierra Nevada. <br></p>
+<p><strong>Comparing discrepancies between social vulnerability indicies associated with Superfund Sites based on varying methods of spatial overlay and resampling</strong> 09/2017 - present <br>
+Analyzing perceived socially vulnerable groups at risk of superfund site failures based on different methodologies used when combining the social data at the census block level with superfund sites represented as spatial point files. Conducted with a fellow graduate student in the NSF Data Science Research program, Jacob Bukoski, as a capstone project for the program. <br></p>
+<p><strong>Stochastic spatio-temporal modelling of marine benthic coverages as a function of herbivourous grazers, water quality, and coral demographics (Oxford, UK)</strong> 06/2016 - 07/2016 <br> In collaboration with Dr. Maria Bruna and Dr. Martin Robinson, spent five weeks over the summer at the University of Oxford creating a python model of marine benthic coverages to investigate meta-stability between ecological regime shifts. <br></p>
 <p><strong>Fluvial Geomorphology, Everglades Study</strong> 07/2014 - 05/2015 <br> Research assistant for Laurel Larsen, professor in the Geography Department, UC Berkeley. <br> Manipulating a provided MATLAB code to perform noise reduction on flow rate data that was then used to determine bed shear stresses for calculating sediment transport. <br> Compared to observations from Acoustic Doppler Velocimeter (ADV) data, viewed via Vectrino Profiler playback. <br></p>
-<p><strong>Flood Inundation Simulations of the Bay Area and Sacramento Delta</strong> 03/2014 - 03/2015 <br> Research assistant for John Radke, professor in Landscape Architecture Department, UC Berkeley. <br> Prepared terrestrial spatial data used in simulating the 100-year storm impact, at various predicted Sea-Level Rise stages, on the California Coast, San Francisco Bay Area, and San Joaquin Delta. <br> Gathered data through LiDar Analyst tools, &amp; digitizing, and contacting local government agencies. Managed and processed data in multi-server network. <br></p>
-<center>
-<strong>Awards and Grants</strong>
-</center>
-<p><br> ISEECI Summer Research Grant | 06/2018 - 08/2018 <br> EWJ Gateway Fellowship | 08/2016 - 05/2017 <br> NSF Research Traineeship Fellowship | 06/2017 - 06/2018 <br> Hong Kong PhD Fellowship Scheme (did not accept) | 08/2016 - 08/2019 <br> Berkeley Conference Travel Grant | 12/2017 <br></p>
+<p><strong>Flood Inundation Simulations of the Bay Area and Sacramento Delta</strong> 03/2014 - 03/2015 <br> As a research assistant for prof. John Radke, prepared terrestrial spatial data used in simulating the 100-year storm impact, at various predicted Sea-Level Rise stages, across California. Gathered data through LiDar Analyst tools, &amp; digitizing, and contacting local government agencies. <br></p>
 <center>
 <strong>Conference Talks</strong>
 </center>
-<p><br> <strong>AGU Ocean Sciences Meeting</strong> February 11-16th, 2018 <br> <em>Assessing social vulnerabilities to potential Superfund site failures from coastal storm surge in the United States</em> <br> <strong>Rosanna Neuhausler<sup>1</sup></strong>, Jacob Jean Bukoski<sup>2</sup>, and Adam Orford<sup>3</sup>. <br> 1. University of California, Berkeley, Department of Geography. 2. University of California, Berkeley, Department of Environmental Science, Policy, and Management. 3. University of California, Berkeley, Energy and Resources Group.</p>
-<p><strong>European Coral Reef Symposium, Oxford, UK</strong> December 13-15, 2017 <br> <em>Stochastic spatio-temporal model of coral cover as a function of herbivorous grazers, water quality, and coral demographics</em> <br> <strong>Rosanna Neuhausler<sup>1</sup></strong>, Martin Robinson <sup>2,3</sup>, and Maria Bruna <sup>2,3</sup> <br> 1. University of California, Berkeley, USA. 2. University of Oxford, Computer Science Department 3. University of Oxford, Mathematical Institute</p>
-<p><strong>Workshops on Big Data and Urban Informatics, Chicago, IL </strong> August 11-12, 2014 <br> <em>Planning for the Change: Mapping Sea Level Rise and Storm Inundation in Sherman Island Using 3Di Hydrodynamic Model and LiDAR</em> <br> Yang Ju<sup>1</sup>, Wei-Chen Hsu<sup>1</sup>, John D. Radke<sup>1</sup>, William L. Fourt<sup>1</sup>, Wei Lang<sup>1</sup>, Olivier Hoes<sup>2</sup>, Howard Foster<sup>1</sup>, Gregory Biging<sup>1</sup>, Emery Roe<sup>1</sup>, Martine Schmidt-Poolman<sup>2</sup>, <strong>Rosanna Neuhausler<sup>1</sup></strong>, Amna Alruheil<sup>1</sup> and William F. Maier<sup>1</sup> <br> 1. University of California, Berkeley, USA. 2. Delft University of Technology, Netherlands</p>
+<p><br></p>
+<p><strong>International Coral Reef Symposium</strong> July 2020 <br> <em>Spatiotemporal Investigation of Reef Resilience in the Pacific Ocean in the 2014-2017 Bleaching Events</em> <br> <strong>Rosanna Neuhausler<sup>1</sup></strong>, Laurel Larsen <sup>1</sup>, and Mark Eakin <sup>2</sup> <br> 1. University of California, Berkeley, USA. 2. National Oceanic and Atmospheric Administration</p>
+<p><strong>2020 SIAM Conference on Mathematics of Planet Earth</strong> INVITED June 2020 <br> <em>The effect of spatial patterns in phase shifts: a stochastic spatiotemporal investigation of coral reefs</em> <br> <strong>Rosanna Neuhausler<sup>1</sup></strong>, Martin Robinson <sup>2,3</sup>, and Maria Bruna <sup>2,3</sup> <br> 1. University of California, Berkeley, USA. 2. University of Oxford, Computer Science Department 3. University of Oxford, Mathematical Institute</p>
+<p><strong>AGU Ocean Sciences Meeting</strong> February 2018 <br> <em>Satellites, Servers, and Spatial Overlay: A multifaceted workflow for investigating spatial determinants of Coral Bleaching Trends across the Pacific</em> <strong>Rosanna Neuhausler<sup>1</sup></strong>, Laurel Larsen <sup>1</sup>, and Mark Eakin <sup>2</sup> <br> 1. University of California, Berkeley, USA. 2. National Oceanic and Atmospheric Administration</p>
+<p><strong>2019 SIAM Conference on Applications of Dynamical Systems</strong> May 2019 <br> <em>An Integrated Approach to Coral-Algal Phase Shift Modeling: Numerical Methods Meets Data Science</em> <strong>Rosanna Neuhausler<sup>1</sup></strong>, Martin Robinson <sup>2,3</sup>, and Maria Bruna <sup>2,3</sup> <br> 1. University of California, Berkeley, USA. 2. University of Oxford, Computer Science Department 3. University of Oxford, Mathematical Institute</p>
+<p><strong>AGU Ocean Sciences Meeting</strong> February 2018 <br> <em>Assessing social vulnerabilities to potential Superfund site failures from coastal storm surge in the United States</em> <br> <strong>Rosanna Neuhausler<sup>1</sup></strong>, Jacob Jean Bukoski<sup>2</sup>, and Adam Orford<sup>3</sup>. <br> 1. University of California, Berkeley, Department of Geography. 2. University of California, Berkeley, Department of Environmental Science, Policy, and Management. 3. University of California, Berkeley, Energy and Resources Group.</p>
+<p><strong>European Coral Reef Symposium, Oxford, UK</strong> December 2017 <br> <em>Stochastic spatio-temporal model of coral cover as a function of herbivorous grazers, water quality, and coral demographics</em> <br> <strong>Rosanna Neuhausler<sup>1</sup></strong>, Martin Robinson <sup>2,3</sup>, and Maria Bruna <sup>2,3</sup> <br> 1. University of California, Berkeley, USA. 2. University of Oxford, Computer Science Department 3. University of Oxford, Mathematical Institute</p>
+<p><strong>Workshops on Big Data and Urban Informatics, Chicago, IL </strong> August 2014 <br> <em>Planning for the Change: Mapping Sea Level Rise and Storm Inundation in Sherman Island Using 3Di Hydrodynamic Model and LiDAR</em> <br> Yang Ju<sup>1</sup>, Wei-Chen Hsu<sup>1</sup>, John D. Radke<sup>1</sup>, William L. Fourt<sup>1</sup>, Wei Lang<sup>1</sup>, Olivier Hoes<sup>2</sup>, Howard Foster<sup>1</sup>, Gregory Biging<sup>1</sup>, Emery Roe<sup>1</sup>, Martine Schmidt-Poolman<sup>2</sup>, <strong>Rosanna Neuhausler<sup>1</sup></strong>, Amna Alruheil<sup>1</sup> and William F. Maier<sup>1</sup> <br> 1. University of California, Berkeley, USA. 2. Delft University of Technology, Netherlands</p>
 <center>
 <strong>Selected Publications</strong>
 </center>
@@ -251,8 +351,6 @@ $(document).ready(function () {
 <strong>Leadership and Competition</strong>
 </center>
 <p><br></p>
-<p><strong>Geog40: Introduction to Earth System Science</strong> | Graduate Student Instructor | 2018 <br> Taught two 2-hour lab sections consisting of around 18 students each, creating and grading assignments, creating midterm questions and holding office hours.<br></p>
-<p><strong>University of Tokyo Data Science Boot Camp</strong> | Assistant Instructor | 2018 <br> Assisted in teaching data science to Ph.D. students from various humanities and natural science departments at the University of Tokyo. The Boot Camp ran for two weeks and was cohosted by Berkeley and the University of Tokyo’s Mathematics Institute.<br></p>
 <p><strong>Sagehen Data Camp</strong> | Organizer/Leader | 2018 <br> Leading a team of undergraduates to the UC Natural Reserve, Sagehen Creek Field Station, for a week long data organizing, processing, and analyzing bootcamp as an effort to expose students to field work and data science, as well as a revamping of the site.<br></p>
 <p><strong>Cal EnviroTeam</strong> | Treasurer/Member | 2015 <br> Designed a water filtration system to compete in the annual water treatment competition at the ASCE Mid-Pacific Student Conference. <br> As treasurer, was in charge of managing the organizations funds. <br></p>
 <p><strong>Berkeley Water Group IdeaLab</strong> | Creative Director/Member | 2013 - 2014 <br> Forum for Berkeley-affiliated individuals from all departments to discuss water-related issues. <br> Created posters for our biweekly meetings, which host speakers from water-related fields.<br></p>
@@ -276,6 +374,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

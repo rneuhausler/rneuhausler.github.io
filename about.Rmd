@@ -39,7 +39,8 @@ the social and environmental science foundation that I now refer to when studyin
 these fields in unison.
 
 As mentioned earlier, I am now a graduate student. Specifically, I am working
-towards [Ph.D. in Geography, Earth System Science](http://geography.berkeley.edu/graduate-studies/program-description/) (still at Berkeley) while concurrently taking part in a two-year National Science Foundation [Data Science program](http://ds421.berkeley.edu/).
+towards [Ph.D. in Geography, Earth System Science](http://geography.berkeley.edu/graduate-studies/program-description/) (still at Berkeley) while concurrently taking part in a two-year National Science Foundation [Data Science program](http://ds421.berkeley.edu/) and a Designated Emphasis in [Computational and Data Science and Engineering](https://citris-uc.org/initiatives/decse/). 
+
 As you may wonder, now that you know I am a geographer: yes, I do produce maps. Though
 I should note: these maps are rather complimentary to my research than my main product. I mainly focus on  quantifying relationships within socio-enviornmental systems. Currently I'm looking at critical time scales of water storage in the Sierra Nevada and regime shifts in the Moorean coral reefs. Maps are used as a way to present the spatial data of my work. <br>
 Cheers!
