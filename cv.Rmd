@@ -9,7 +9,7 @@ output: pdf_document
 **University of California, Berkeley** <br>
 **Graduate GPA: 3.93** 08/2016 - present <br>
 Ph.D. Geography, Earth System Science<br>
-Designated Emphasis, Computational and Data Science and Engineering <br>
+Designated Emphasis: Computational and Data Science and Engineering <br>
 NSF Research Traineeship Program: Data Sciences for the 21st Century <br>
 **Undergraduate GPA: 3.56** 08/2012 - 05/2016 <br>
 B.S. Conservation and Resource Studies, focus: Water Systems Engineering <br>
@@ -98,7 +98,7 @@ As a research assistant for prof. John Radke, prepared terrestrial spatial data 
 
 
 **2019 SIAM Conference on Applications of Dynamical Systems** May 2019 <br>
-*An Integrated Approach to Coral-Algal Phase Shift Modeling: Numerical Methods Meets Data Science*
+*An Integrated Approach to Coral-Algal Phase Shift Modeling: Numerical Methods Meets Data Science* <br>
 **Rosanna Neuhausler^1^**, Martin Robinson ^2,3^, and Maria Bruna ^2,3^ <br>
 1. University of California, Berkeley, USA.  2. University of Oxford, Computer Science Department 3. University of Oxford, Mathematical Institute
 
@@ -127,6 +127,12 @@ Y. Ju, W. Hsu, J. Radke, W. Fourt, W. Lang, O. Hoes, H. Foster, G. Biging
 <center>**Leadership and Competition**</center>
 <br>
 
+**Geog40: Introduction to Earth System Science** | Graduate Student Instructor | 2018 <br>
+Taught two 2-hour lab sections consisting of around 18 students each, creating and grading assignments, creating midterm questions and holding office hours.<br>
+
+**University of Tokyo Data Science Boot Camp** | Assistant Instructor | 2018  <br>
+Assisted in teaching data science to Ph.D. students from various humanities and natural science departments at the University of Tokyo. The Boot Camp ran for two weeks and was cohosted by Berkeley and the University of Tokyo’s Mathematics Institute.<br>
+
 **Sagehen Data Camp** | Organizer/Leader | 2018 <br>
 Leading a team of undergraduates to the UC Natural Reserve, Sagehen Creek Field Station, for
 a week long data organizing, processing, and analyzing bootcamp as an effort to expose
@@ -134,7 +140,7 @@ students to field work and data science, as well as a revamping of the site.<br>
 
 **Cal EnviroTeam** | Treasurer/Member | 2015 <br>
 Designed a water filtration system to compete in the annual water treatment competition at the ASCE Mid-Pacific Student Conference. <br>
-As treasurer, was in charge of managing the organizations funds. <br>
+As treasurer, was in charge of managing the organizations funds.<br>
 
 **Berkeley Water Group IdeaLab** | Creative Director/Member | 2013 - 2014 <br>
 Forum for Berkeley-affiliated individuals from all departments to discuss water-related issues. <br>
