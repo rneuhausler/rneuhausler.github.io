@@ -11,8 +11,8 @@ navbar:
       href: cv.html
     - text: "Projects"
       menu:
-      - text: "Visualizing Voices"
-        href: visualizing_voices.html
+      - text: "AI at the Edge"
+        href: https://people.eecs.berkeley.edu/~kubitron/courses/cs262a-F18/projects/reports/project9_report_ver2.pdf
 output:
   html_document:
     theme: lumen

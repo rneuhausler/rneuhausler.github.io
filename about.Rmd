@@ -15,39 +15,37 @@ title: ""
 
 </style>
 
-Hello,
-
-Once again, welcome to my website. Please enjoy my following mini-autobiography:
-
-
 <div class="row" style="padding-top: 30px;">
 <div class="col-sm-6">
 
-Here is a self-taken picture of me and the town in which I 
-was born. I left this town, St. Gallen, Switzerland, at the age of six when I moved
+To the right you can see a self-taken picture of me and St. Gallen, Switzerland, the town in which 
+was born. I left this town at the age of six when I moved
 to the United States. Since then I lived in Ann Arbor, MI, for twelve years, and 
-in Berkeley, CA, for the last five. Having experienced these semi-urban environments,
-with each consecutive location having a greater pollution problems, I've become interested
-in the social-environmental interface. While I originally wanted to express this interest
-through architecture, I've transitioned onto the Ph.D. route on which I am studying
-[complex systems](https://en.wikipedia.org/wiki/Complexity_theory_and_organizations) through data science!
+in Berkeley, CA, for the last eight. Having experienced semi-urban environments,
+with each consecutive location having greater pollution problems, I became interested
+in the human-environmental interface. While I originally wanted to express this interest
+through architecture, I've come to be more intrigued by the larger system, exploring human-environmental interactions at various scales. 
 
-I spent 2012 - 2016 completing a [B.S. 
-in the College of Natural Resources](http://guide.berkeley.edu/undergraduate/degree-programs/conservation-resource-studies/) and a [B.A. in the College of Environmental Design](http://guide.berkeley.edu/undergraduate/degree-programs/urban-studies/)
-at the University of California, Berkeley. These degrees have provided me with
-the social and environmental science foundation that I now refer to when studying
-these fields in unison.
+I spent 2012 - 2016 completing a [B.S. in the College of Natural Resources](http://guide.berkeley.edu/undergraduate/degree-programs/conservation-resource-studies/), with a focus on water systems  engineering, and a [B.A. in the College of Environmental Design](http://guide.berkeley.edu/undergraduate/degree-programs/urban-studies/)
+at the University of California, Berkeley. During this time I learned about how water moves through an ecosystem, its effect on that ecosystem, how we fight over water, extract water, have unequal access to safe water, pollutants found in water, and how urbanization has an influence on all of the above. I contributed to key research on storm inundations across all of California, sediment transport in the Everglades, and the urban heat island effect in Hong Kong. I spent four years learning about all the things I had been questioning and more.
 
-As mentioned earlier, I am now a graduate student. Specifically, I am working
-towards [Ph.D. in Geography, Earth System Science](http://geography.berkeley.edu/graduate-studies/program-description/) (still at Berkeley) while concurrently taking part in a two-year National Science Foundation [Data Science program](http://ds421.berkeley.edu/) and a Designated Emphasis in [Computational and Data Science and Engineering](https://citris-uc.org/initiatives/decse/). 
+Now I am a [Ph.D. candidate in Geography, Earth System Science](http://geography.berkeley.edu/graduate-studies/program-description/) (still at Berkeley). At the beginning of my doctoral studies, I took part in a two-year National Science Foundation [Data Science program](http://ds421.berkeley.edu/) and completed a Designated Emphasis in [Computational and Data Science and Engineering](https://citris-uc.org/initiatives/decse/) to build on my quantitaive analytical skills. Throughout my Ph.D. I've been studying various human-environmental systems - as well as operating systems and other technical components of computing - but overtime became most drawn to  scoral reefs. 
 
-As you may wonder, now that you know I am a geographer: yes, I do produce maps. Though
-I should note: these maps are rather complimentary to my research than my main product. I mainly focus on  quantifying relationships within socio-enviornmental systems. Currently I'm looking at critical time scales of water storage in the Sierra Nevada and regime shifts in the Moorean coral reefs. Maps are used as a way to present the spatial data of my work. <br>
-Cheers!
+Nursing an estimated 25% of all marine life, coral reefs are key to human and environmental prosperity. Provided my background in urban studies, combined with my hydrologist lens and multi-year experience with remote sensing, I found the most suitable contribution to the field of marine biology that I can provide in this context to be mapping out coastal development and quantifying the potential impacts it has on adjacent reefs. This is what I've been primarily working on for the past year: scrapping spatial information from the web, creating a pixel based land use classifier, and applying it accross the Pacific, all wrapped up in a data pipeline. I plan on completing my dissertation May 2021 and hope to further apply my human-marine system domain knowledge and statistical skillset in addressing environmental concerns.
+
 
 </div>
 <div class="col-sm-6">
 
+
+
+
 ![](images/sankt_gallen.jpg)
+
+
+
+
+![](images/coastal_development.jpg)
+
 
 </div>
