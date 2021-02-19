@@ -24,9 +24,8 @@ h3 {
 }
 
 /* columns */
-* {
-  box-sizing: border-box;
-}
+* {box-sizing: border-box;}
+
 .column {
   float: left;
   padding: 10px;
@@ -51,7 +50,7 @@ h3 {
 
 <body>
 
-<a href="neuhausler_resume.pdf" >PDF</a>
+<a href="pdfs/neuhausler_resume.pdf" >PDF</a>
 
 <div class="column left">
 
