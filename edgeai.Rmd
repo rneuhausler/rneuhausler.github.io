@@ -1,0 +1,87 @@
+---
+title: ""
+---
+
+<head>
+<style>
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 400px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute; 
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/* columns */
+* {box-sizing: border-box;}
+
+.column {
+  float: left;
+}
+.left {
+  width: 50%;
+  padding-left: 20px;
+}
+.right {
+  width: 50%;
+  padding-right: 20px:
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+
+<body>
+<br>
+<strong>Position:</strong> Student in Graduate Operating Systems Course <br>
+<br>
+<strong>Date:</strong> Fall 2018 <br>
+<br>
+<strong>Assignment:</strong> Course Final Project. My team and I decided to use AI on intelligent edge devices to create and test a cloud-independent intruder detection system.<br>
+<br>
+<br>
+<div class="container" style="float: left;">
+  <img src="images/aipaper_preview.png" alt="Avatar" class="image">
+  <div class="overlay"> <a style="color:white;" href="https://people.eecs.berkeley.edu/~kubitron/courses/cs262a-F18/projects/reports/project9_report_ver2.pdf"><br><br><br>paper</a> </div>
+</div>
+
+<div class="container" style="float: right;">
+  <img src="images/aiposter_preview.png" alt="Avatar" class="image">
+  <div class="overlay"> <a style="color:white;" href="https://people.eecs.berkeley.edu/~kubitron/courses/cs262a-F18/projects/reports/project9_poster.pdf"><br><br><br>poster</a> </div>
+</div>
+
+<br>
+<br>
+<br>
+
+</body>

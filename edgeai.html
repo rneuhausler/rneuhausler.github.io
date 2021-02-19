@@ -12,7 +12,7 @@
 
 
 
-<title>about.utf8</title>
+<title>edgeai.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -372,20 +372,80 @@ for (i = 0; i < dropdown.length; i++) {
 </div>
 
 
-<style type="text/css">
-.body {
-  text-align: justify;
-  padding-top: 30px;
-  padding-right: 30px;
-  padding-left: 30px;"
+<head>
+<style>
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 400px;
 }
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.overlay {
+  position: absolute; 
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+.container:hover .overlay {
+  opacity: 1;
+}
+
+/* columns */
+* {box-sizing: border-box;}
+
+.column {
+  float: left;
+}
+.left {
+  width: 50%;
+  padding-left: 20px;
+}
+.right {
+  width: 50%;
+  padding-right: 20px:
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 </style>
-<div class="body">
-<p>I was born in St. Gallen Switzerland and moved to the U.S. at the age of six. Since then I lived in Ann Arbor, MI, for twelve years, in Berkeley, CA, for eight. I’m now situated in New York City while I finish my dissertation. Having experienced semi-urban environments, with each consecutive location having greater pollution problems, I became interested in the human-environmental interface. While I originally wanted to express this interest through architecture, I’ve come to be more intrigued by the larger system, exploring human-environmental interactions at various scales.</p>
-<p>I spent 2012 - 2016 completing a <a href="http://guide.berkeley.edu/undergraduate/degree-programs/conservation-resource-studies/">B.S. in the College of Natural Resources</a>, with a focus on water systems engineering, and a <a href="http://guide.berkeley.edu/undergraduate/degree-programs/urban-studies/">B.A. in the College of Environmental Design</a> at the University of California, Berkeley. During this time I learned about how water moves through an ecosystem, its effect on that ecosystem, how we fight over water, extract water, have unequal access to safe water, pollutants found in water, and how urbanization has an influence on all of the above. I contributed to key research on storm inundations across all of California, sediment transport in the Everglades, and the urban heat island effect in Hong Kong. I spent four years learning about all the things I had been questioning and more.</p>
-<p>Currently, I am a <a href="http://geography.berkeley.edu/graduate-studies/program-description/">Ph.D. candidate in Geography, Earth System Science</a> (still at Berkeley). At the beginning of my doctoral studies, I took part in a two-year National Science Foundation <a href="http://ds421.berkeley.edu/">Data Science program</a> and completed a Designated Emphasis in <a href="https://citris-uc.org/initiatives/decse/">Computational and Data Science and Engineering</a> to build on my quantitaive analytical skills. Throughout my Ph.D. I’ve been studying various human-environmental systems - as well as operating systems and other technical components of computing - but overtime became most drawn to coral reefs.</p>
-<p>Coral reefs, nurseries to an estimated 25% of all marine life, are key to human and environmental prosperity. Provided my background in urban studies, combined with my hydrologist lens and multi-year experience with remote sensing, I found the most suitable contribution to the field of marine biology that I can provide in this context to be mapping out coastal development and quantifying the potential impacts it has on adjacent reefs. This is what I’ve been primarily working on for the past year: scrapping spatial information from the web, creating a pixel based land use classifier, and applying it accross the Pacific, all wrapped up in a data pipeline. I plan on completing my dissertation May 2021 and hope to further apply my human-marine system domain knowledge and statistical skillset in addressing environmental concerns.</p>
+</head>
+<body>
+<br> <strong>Position:</strong> Student in Graduate Operating Systems Course <br> <br> <strong>Date:</strong> Fall 2018 <br> <br> <strong>Assignment:</strong> Course Final Project. My team and I decided to use AI on intelligent edge devices to create and test a cloud-independent intruder detection system.<br> <br> <br>
+<div class="container" style="float: left;">
+<img src="images/aipaper_preview.png" alt="Avatar" class="image">
+<div class="overlay">
+<a style="color:white;" href="https://people.eecs.berkeley.edu/~kubitron/courses/cs262a-F18/projects/reports/project9_report_ver2.pdf"><br><br><br>paper</a>
 </div>
+</div>
+<div class="container" style="float: right;">
+<img src="images/aiposter_preview.png" alt="Avatar" class="image">
+<div class="overlay">
+<a style="color:white;" href="https://people.eecs.berkeley.edu/~kubitron/courses/cs262a-F18/projects/reports/project9_poster.pdf"><br><br><br>poster</a>
+</div>
+</div>
+<p><br> <br> <br></p>
+</body>
 
 
 
