@@ -1,6 +1,7 @@
 #install.packages("rmarkdown", type = "source")
 
-setwd("/Users/rosannaneuhausler/Documents/Website/rneuhausler.github.io")
+wd = getwd()
+setwd("/Users/rosannaneuhausler/Desktop/website/rneuhausler.github.io")
 
 #render your sweet site. 
 rmarkdown::render_site()

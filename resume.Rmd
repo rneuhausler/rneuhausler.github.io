@@ -8,7 +8,6 @@ output: html_document
 <head>
 <style>
 
-
 i {
   color:#869396;
   font-size: 14px;
@@ -24,27 +23,22 @@ h3 {
   margin-bottom: -17px;
 }
 
+/* columns */
 * {
   box-sizing: border-box;
 }
-
-/* Create two unequal columns that float next to each other */
 .column {
   float: left;
   padding: 10px;
 }
-
 .left {
   width: 30%;
-  padding-left: 40px;
+  padding-left: 20px;
 }
-
 .right {
-  width: 62%;
-  padding-right: 280px:
+  width: 70%;
+  padding-right: 20px:
 }
-
-/* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;

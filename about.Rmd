@@ -7,19 +7,12 @@ title: ""
 .body {
   text-align: justify;
   padding-top: 30px;
-  padding-right: 100px;
-  padding-left: 80px;"
+  padding-right: 30px;
+  padding-left: 30px;"
 }
-
-#getting-started img {
-  margin-right: 10px;
-}
-
 </style>
 
 <div class="body">
-
-
 
 I was born in St. Gallen Switzerland and moved to the U.S. at the age of six. Since then I lived in Ann Arbor, MI, for twelve years, 
 in Berkeley, CA, for eight. I'm now situated in New York City while I finish my dissertation. Having experienced semi-urban environments,
@@ -33,6 +26,5 @@ at the University of California, Berkeley. During this time I learned about how 
 Currently, I am a [Ph.D. candidate in Geography, Earth System Science](http://geography.berkeley.edu/graduate-studies/program-description/) (still at Berkeley). At the beginning of my doctoral studies, I took part in a two-year National Science Foundation [Data Science program](http://ds421.berkeley.edu/) and completed a Designated Emphasis in [Computational and Data Science and Engineering](https://citris-uc.org/initiatives/decse/) to build on my quantitaive analytical skills. Throughout my Ph.D. I've been studying various human-environmental systems - as well as operating systems and other technical components of computing - but overtime became most drawn to coral reefs. 
 
 Coral reefs, nurseries to an estimated 25% of all marine life, are key to human and environmental prosperity. Provided my background in urban studies, combined with my hydrologist lens and multi-year experience with remote sensing, I found the most suitable contribution to the field of marine biology that I can provide in this context to be mapping out coastal development and quantifying the potential impacts it has on adjacent reefs. This is what I've been primarily working on for the past year: scrapping spatial information from the web, creating a pixel based land use classifier, and applying it accross the Pacific, all wrapped up in a data pipeline. I plan on completing my dissertation May 2021 and hope to further apply my human-marine system domain knowledge and statistical skillset in addressing environmental concerns.
-
 
 </div>
