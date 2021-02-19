@@ -7,6 +7,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -15,13 +16,15 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/darkly.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+<link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css">
@@ -70,9 +73,7 @@ h6 {
 
 <link rel="stylesheet" href="starter.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -86,13 +87,18 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
 }
+.html-widget {
+  margin-bottom: 20px;
+}
 button.code-folding-btn:focus {
   outline: none;
+}
+summary {
+  display: list-item;
 }
 </style>
 
@@ -100,34 +106,70 @@ button.code-folding-btn:focus {
 <style type="text/css">
 /* padding for bootstrap navbar */
 body {
-  padding-top: 54px;
+  padding-top: 60px;
   padding-bottom: 40px;
 }
 /* offset scroll position for anchor links (for fixed navbar)  */
 .section h1 {
-  padding-top: 59px;
-  margin-top: -59px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
-
 .section h2 {
-  padding-top: 59px;
-  margin-top: -59px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h3 {
-  padding-top: 59px;
-  margin-top: -59px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h4 {
-  padding-top: 59px;
-  margin-top: -59px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h5 {
-  padding-top: 59px;
-  margin-top: -59px;
+  padding-top: 65px;
+  margin-top: -65px;
 }
 .section h6 {
-  padding-top: 59px;
-  margin-top: -59px;
+  padding-top: 65px;
+  margin-top: -65px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
 }
 </style>
 
@@ -149,51 +191,189 @@ $(document).ready(function () {
 });
 </script>
 
-
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-</script>
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
 
 <!-- code folding -->
 
 
 
 
+</head>
+
+<body>
 
 
-<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html">Rosanna Neuhausler</a>
-    </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-  <a href="index.html">Home</a>
-</li>
-<li>
-  <a href="about.html">About Me</a>
-</li>
-<li>
-  <a href="cv.html">CV</a>
-</li>
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div><!--/.container -->
-</div><!--/.navbar -->
+<div class="container-fluid main-container">
+
+
+
+<style>
+
+  img {
+    float: left;
+
+  }
+
+  body {
+    color: #42565e;
+    background-color: #ffffff } /*for dark background: #0D2A35*/
+
+
+
+  ul.a {list-style-type: square;}
+  a:link{ color: #285161 }
+  a:visited{ color: #285161}
+
+
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #869396;
+  display: block;
+  border: none;
+  background: none;
+  width:100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #42565e;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: white;
+  color: black;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 6px;
+}
+
+</style>
+
+
+
+<div>
+
+
+<img src="images/newyork.png" alt="HTML5 Icon" style="width:119px;height:119px;">
+
+<h1>Rosanna Neuhausler</h1>
+<strong>Ph.D. Candidate in Environmental Systems Dynamics Lab, U.C. Berkeley</strong> <br> Looking to apply human-marine system domain knowledge and statistical skillset in addressing socioenvironmental concerns.
+
+<hr>
+
+
+<div class="sidenav">
+  <a href=index.html>About Me</a>
+  <a href=resume.html>Resume</a>
+  <a href=cv.html>CV</a>
+  <button class="dropdown-btn">Projects
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href=https://people.eecs.berkeley.edu/~kubitron/courses/cs262a-F18/projects/reports/project9_report_ver2.pdf>Intruder Detection with AI at the Edge</a>
+    <a href=#>Visualizing Voices</a>
+    <a href=#>Fisheye Image Segmentation</a>
+    <a href=#>Superfund Sites and Storm Surges</a>
+  </div>
+  <a href=contact.html>Contact</a>
+</div>
+
+<hr>
+
+</div>
+
+<script>
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var dropdownContent = this.nextElementSibling;
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  });
+}
+</script>
 
 <div class="fluid-row" id="header">
 
@@ -203,15 +383,24 @@ $(document).ready(function () {
 </div>
 
 
-<div id="welcome" class="section level2">
-<h2>Welcome!</h2>
-<img src="images/death_valley.png" /> <br> <br>
-<center>
-<strong>email</strong>: <a href="mailto:rneuhausler@berkeley.edu">rneuhausler@berkeley.edu</a>
-<center>
-<center>
-<strong>linked-in</strong>: <a href="https://www.linkedin.com/in/rosanna-neuhausler/">linkedin.com/in/rosanna-neuhausler/</a>
-<center>
+<style type="text/css">
+.body {
+  text-align: justify;
+  padding-top: 30px;
+  padding-right: 100px;
+  padding-left: 80px;"
+}
+
+#getting-started img {
+  margin-right: 10px;
+}
+
+</style>
+<div class="body">
+<p>I was born in St. Gallen Switzerland and moved to the U.S. at the age of six. Since then I lived in Ann Arbor, MI, for twelve years, in Berkeley, CA, for eight. I’m now situated in New York City while I finish my dissertation. Having experienced semi-urban environments, with each consecutive location having greater pollution problems, I became interested in the human-environmental interface. While I originally wanted to express this interest through architecture, I’ve come to be more intrigued by the larger system, exploring human-environmental interactions at various scales.</p>
+<p>I spent 2012 - 2016 completing a <a href="http://guide.berkeley.edu/undergraduate/degree-programs/conservation-resource-studies/">B.S. in the College of Natural Resources</a>, with a focus on water systems engineering, and a <a href="http://guide.berkeley.edu/undergraduate/degree-programs/urban-studies/">B.A. in the College of Environmental Design</a> at the University of California, Berkeley. During this time I learned about how water moves through an ecosystem, its effect on that ecosystem, how we fight over water, extract water, have unequal access to safe water, pollutants found in water, and how urbanization has an influence on all of the above. I contributed to key research on storm inundations across all of California, sediment transport in the Everglades, and the urban heat island effect in Hong Kong. I spent four years learning about all the things I had been questioning and more.</p>
+<p>Currently, I am a <a href="http://geography.berkeley.edu/graduate-studies/program-description/">Ph.D. candidate in Geography, Earth System Science</a> (still at Berkeley). At the beginning of my doctoral studies, I took part in a two-year National Science Foundation <a href="http://ds421.berkeley.edu/">Data Science program</a> and completed a Designated Emphasis in <a href="https://citris-uc.org/initiatives/decse/">Computational and Data Science and Engineering</a> to build on my quantitaive analytical skills. Throughout my Ph.D. I’ve been studying various human-environmental systems - as well as operating systems and other technical components of computing - but overtime became most drawn to coral reefs.</p>
+<p>Coral reefs, nurseries to an estimated 25% of all marine life, are key to human and environmental prosperity. Provided my background in urban studies, combined with my hydrologist lens and multi-year experience with remote sensing, I found the most suitable contribution to the field of marine biology that I can provide in this context to be mapping out coastal development and quantifying the potential impacts it has on adjacent reefs. This is what I’ve been primarily working on for the past year: scrapping spatial information from the web, creating a pixel based land use classifier, and applying it accross the Pacific, all wrapped up in a data pipeline. I plan on completing my dissertation May 2021 and hope to further apply my human-marine system domain knowledge and statistical skillset in addressing environmental concerns.</p>
 </div>
 
 
@@ -231,6 +420,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

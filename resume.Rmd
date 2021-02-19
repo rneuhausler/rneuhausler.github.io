@@ -1,0 +1,189 @@
+---
+title: ""
+author: "Rosanna Neuhausler"
+date: "2/17/2021"
+output: html_document
+---
+
+<head>
+<style>
+
+
+i {
+  color:#869396;
+  font-size: 14px;
+}
+
+p {
+  text-align: justify;
+  padding-top: 5px;
+  padding-right: 10px
+  }
+
+h3 {
+  margin-bottom: -17px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two unequal columns that float next to each other */
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.left {
+  width: 30%;
+  padding-left: 40px;
+}
+
+.right {
+  width: 62%;
+  padding-right: 280px:
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+</style>
+</head>
+
+
+<body>
+
+<a href="neuhausler_resume.pdf" >PDF</a>
+
+<div class="column left">
+
+<h3>Contact</h3>
+___
+rneuhausler@berkeley.edu <br>
+1-734-709-6470 <br>
+New York <br>
+
+<h3>Education</h3>
+___
+
+<p style="text-align: left;" padding-top: 2px; padding-right: 2px>
+  <strong>University of California, Berkeley</strong><br>
+  <strong>Ph.D.</strong> Geography, Earth System Science.<br>
+  <i>Adv. Candidacy 2019</i><br>
+  <strong>Ph.D. Minor</strong> Computational and Data Science and Engineering<br>
+  <i>2016 - May 2021</i><br>
+  <strong>B.A</strong> Urban Studies <br>
+  <strong>B.S.</strong> Conservation & Resource Studies<br>
+  <i>2012 - 2016</i>
+</p>
+
+
+
+
+<h3>Skills</h3>
+___
+<p style="text-align: left;" padding-top: 2px; padding-right: 2px>
+  <strong>Methods/Concepts:</strong><br>
+  Complex Systems Analysis, Remote Sensing/GIS, Machine Learning<br>
+  <br>
+  <strong>Technical:</strong><br>
+  Python, R, MATLAB, Git, LaTeX, ArcGIS, Photoshop<br>
+  <br>
+  <strong>Language:</strong><br>
+   English, German, and Swiss-German.<br>
+</p>
+
+<h3>Awards</h3>
+___
+
+<p style="text-align: left;" padding-top: 2px; padding-right: 2px>
+  <strong>NASA FINESST</strong><br>
+  <i>2019 - 2022</i><br>
+  <strong>ISEECI Summer Research Grant</strong><br>
+  <i>2018</i><br>
+  <strong>NSF Research Traineeship Fellowship</strong>
+  <i>2017 - 2018</i><br>
+  <strong>Berkeley Conference Travel Grant</strong><br>
+  <i>2017</i><br>
+  <strong>EWJ Gateway Fellowship</strong>
+  <i>2016 - 2017</i><br>
+</p>
+<br>
+<br>
+<br>
+
+</div>
+
+<div class="column right">
+
+<h3>Research</h3>
+___
+<strong>Ph.D. Candidate</strong> <i style="float: right;">2019 - May 2021</i> <br>
+<i>Environmental Systems Dynamics Lab, UC Berkeley, California</i> <br>
+<p>
+Creating pixel-level land use classifier for remotely sensed imagery across the
+Pacific Ocean, data pipeline, and Random Forest model for investigating various
+spatial determinants of coral reef health. As project manager, created collaboration
+with a team at NOAA and applied for/received funding for my and my undergraduate
+research assistant’s salaries from NASA.
+</p>
+<strong>Visiting Researcher</strong> <i style="float: right;">Summer 2017</i> <br>
+<i>Mathematical Institute, Oxford University, United Kingdom</i> <br>
+<p>
+Developed a stochastic spatiotemporal object-oriented python model of coral reef
+benthic coverages for analysis of quantifying spatial competition.
+</p>
+<strong>Research Assistant</strong> <i style="float: right;">2014 - 2015</i> <br>
+<i>Center for Catastrophic Risk Management, UC Berkeley, California</i> <br>
+<p>
+Gathered, managed, and processed terrestrial spatial data in multi-server network <br>
+for simulating Sea Level Rise impact on the California’s coastline infrastructure. <br>
+</p>
+
+<h3>Internships</h3>
+___
+<strong>Cal Energy Corps Participant</strong> <i style="float: right;">Summer 2015</i> <br>
+<i>Chinese University of Hong Kong, Hong Kong</i> <br>
+<p>
+Wrote MATLAB functions to semi-automate process of segmenting fisheye images of
+courtyard enveloping structures for calculating the Urban Heat Island Effect of
+various building materials. Taught myself how to code and explained code to the
+architecture majors that then used it.
+</p>
+<strong>Architect Intern</strong> <i style="float: right;">Summer 2013</i> <br>
+<i>Ardnt Geiger Herrmann Architecture Firm, Switzerland</i> <br>
+<p>
+Designed interior features for an eight million dollar house on CAD software.
+Contributed to numerous projects presentation prep and CAD drawings.
+</p>
+
+<h3>Leadership</h3>
+___
+
+<p style="text-align: left;" padding-top: 2px; padding-right: 2px>
+<strong>Graduate Student Instructor</strong> <i style="float: right;">Spring 2020 and Fall 2018</i> <br>
+<strong>Geog 40: Intro to Earth System Science, UC Berkeley, California</strong> <br>
+<br>
+<strong>Assistant Instructor</strong> <i style="float: right;">Summer 2018</i> <br>
+<strong>University of Tokyo Data Science Boot Camp, Japan</strong> <br>
+<br>
+<strong>Organizer/Leader</strong> <i style="float: right;">Summer 2018</i> <br>
+<strong>Sagehen Natural Reserve Station Data Camp, California</strong> <br>
+<br>
+<strong>Community Liaison</strong> <i style="float: right;">Spring 2013</i> <br>
+<strong>Cool California Challenge, California</strong> <br>
+<br>
+<strong>Co-captain/Teammate</strong> <i style="float: right;">2008 - 2012</i> <br>
+<strong>Pioneer High School Track & Cross Country, Ann Arbor MI</strong>
+</p>
+<br>
+<br>
+<br>
+</div>
+
+
+</body>

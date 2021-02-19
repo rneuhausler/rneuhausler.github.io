@@ -1,10 +1,8 @@
 ---
-title: ''
-output: pdf_document
+title: ""
 ---
 
-<br>
-<center>**Education**</center>
+<h3>Education</h3>
 <br>
 **University of California, Berkeley** <br>
 **Graduate GPA: 3.93** 08/2016 - present <br>
@@ -14,8 +12,8 @@ NSF Research Traineeship Program: Data Sciences for the 21st Century <br>
 **Undergraduate GPA: 3.56** 08/2012 - 05/2016 <br>
 B.S. Conservation and Resource Studies, focus: Water Systems Engineering <br>
 B.A. Urban Studies <br>
-
-<center>**Awards and Grants**</center>
+<br>
+<h3>**Awards and Grants**</h3>
 <br>
 NASA NSPIRES Fellowship | 09/2019 - 09/2022 <br>
 ISEECI Summer Research Grant | 06/2018 - 08/2018 <br>
@@ -24,137 +22,212 @@ NSF Research Traineeship Fellowship | 06/2017 - 06/2018 <br>
 Hong Kong PhD Fellowship Scheme (did not accept) | 08/2016 - 08/2019 <br>
 Berkeley Conference Travel Grant | 12/2017 <br>
 
-<center>**Select Coursework**</center>
+<br>
+<h3>**Select Coursework**</h3>
 <br>
 **Graduate**:
-Statistical Models: Theory & Application -- Statistics & Multivariate Data Analysis for Research -- Topics in Earth System Remote Sensing -- Collaborative & Reproducible Data Science -- Advanced Topics in Computer Systems -- Interdisciplinary Research Methods: Environment,
-Society, & Global Change --  Complex Environmental Systems -- Numerical Methods for Environmental Flow Modeling
+Statistical Models: Theory & Application -- Topics in Earth System Remote Sensing -- 
+Statistics & Multivariate Data Analysis for Research -- Collaborative & Reproducible 
+Data Science -- Advanced Topics in Computer Systems -- Interdisciplinary Research Methods: 
+Environment, Society, & Global Change --  Complex Environmental Systems -- Numerical Methods 
+for Environmental Flow Modeling
 
 **Undergraduate**:
-Civil & Environmental Engineering System Analysis -- The City: Theory & Methods in Urban Studies -- Geographic Information Systems -- Environmental Problem Solving -- Water Chemistry -- Fluid Mechanics -- Linear Algebra and Differential Equations -- Introduction to Statistics -- Water in Terrestrial Environments
+Civil & Environmental Engineering System Analysis -- The City: Theory & Methods
+in Urban Studies -- Geographic Information Systems -- Environmental Problem Solving -- Water Chemistry --
+Fluid Mechanics -- Linear Algebra and Differential Equations -- Introduction to Statistics -- Water in
+Terrestrial Environments -- Introduction to Envrionmental Economics <br>
+
+<br>
+<h3>**Skills**</h3>
+<br>
+**Technical**: Python, R, MATLAB, Git, LaTeX, ArcGIS, AdobePhotoshop, AutoCAD, C++, and
+Google Earth Engine. Currently learning D3.js. <br>
+**Language**: English, Swiss-German, and German.
+
+<br>
+<h3>**Internships**</h3>
 <br>
 
-<center>**Skills**</center>
-<br>
-**Technical**: Python, R, MATLAB, Git, LaTeX, ArcGIS, AdobePhotoshop, AutoCAD, C++, and Google Earth Engine. Currently learning D3.js. <br>
-**Language**: English, Swiss-German, and German. Currently learning French.
+**Cal Energy Corps: Urban Climate Study (NT, Hong Kong)** 		      06/2015 - 08/2015
+<br style="line-height: 9px" />
+As part of the Cal Energy Corps internship program, semi-automated step in research process
+for Edward Ng, at the Chinese University of Hong Kong.Wrote a MATLAB script and functions that 
+semi-automated the process for calculating view factors of various enveloping structural 
+and natural surfaces onto a central point from fisheye images. <br>
+In the process of writing the code, I taught myself how to code and how to explain
+code to the architecture majors that then used it. <br>
 
----------
-
-
-<center>**Internships**</center>
-<br>
-**Cal Energy Corps: Urban Climate Study (NT, Hong Kong)** 		      06/2015 - 08/2015 <br>
-As part of the Cal Energy Corps internship program, semi-automated step in research process for Edward Ng, at the Chinese University of Hong Kong. <br>
-Wrote a MATLAB script and functions that semi-automated the process for calculating view factors of various enveloping structural and natural surfaces onto a central point from fisheye images. <br>
-In the process of writing the code, I taught myself how to code and how to explain code to the architecture majors that then used it. 
-
-**Arndt Geiger Herrmann Architecture Firm (Zurich, Switzerland)** 	      06/2013 - 08/2013 <br>
+<br> 
+**Arndt Geiger Herrmann Architecture Firm (Zurich, Switzerland)** 	      06/2013 - 08/2013
+<br style="line-height: 9px" />
 Designed interior features for an $8 million house on CAD software. <br>
 Contributed to numerous projects via presentation preparation and CAD drawings.
 
-<center>**Research**</center>
+<br>
+<h3>**Research**</h3>
 <br>
 
-**Remote sensing for Coral Bleaching Prediction** 06/2019 - present <br>
-Detecting potential spatial determinants of coral bleaching using in-situ and remotely sensed data from across the Pacific Ocean. <br>
+**Remote sensing for Coral Bleaching Prediction** 06/2019 - present
+<br style="line-height: 9px" />
+Detecting potential spatial determinants of coral bleaching using in-situ and remotely sensed data <br>
+from across the Pacific Ocean. <br>
 
-**Investigating critical timescales of water storage and discharge **    05/2018 - present <br>
-Resolving critical timescales over which hydroclimatic variables influence discharge, as well as the significance of their influence on discharge, in the Sagehen Creek watershed within the Sierra Nevada. <br>
+<br>
+**Comparing discrepancies between social vulnerability indicies associated with Superfund Sites** <br>
+**based on varying methods of spatial overlay and resampling** 09/2017 - present
+<br style="line-height: 9px" />
+Analyzing perceived socially vulnerable groups at risk of superfund site failures based on
+different methodologies used when combining the social data at the census block level with
+superfund sites represented as spatial point files. <br>
+Conducted with a fellow graduate student in the NSF Data Science Research program, Jacob Bukoski, as a capstone project for the program. <br>
 
-**Comparing discrepancies between social vulnerability indicies associated with Superfund Sites based on varying methods of spatial overlay and resampling** 09/2017 - present  <br>	        	          
-Analyzing perceived socially vulnerable groups at risk of superfund site failures based on different methodologies used when combining the social data at the census block level with superfund sites represented as spatial point files. Conducted with a fellow graduate student in the NSF Data Science Research program, Jacob Bukoski, as a capstone project for the program. <br>
+<br>
+**Stochastic spatio-temporal modelling of marine benthic coverages as a function of**  <br>
+**herbivourous grazers, water quality, and coral demographics (Oxford, UK)** 06/2016 - 07/2016
+<br style="line-height: 9px" />
+In collaboration with Dr. Maria Bruna and Dr. Martin Robinson, spent five weeks over the summer <br>
+at the University of Oxford creating a python model of marine benthic coverages to investigate  <br>
+meta-stability between ecological regime shifts. <br>
 
-**Stochastic spatio-temporal modelling of marine benthic coverages as a function of herbivourous grazers, water quality, and coral demographics (Oxford, UK)** 06/2016 - 07/2016 <br>
-In collaboration with Dr. Maria Bruna and Dr. Martin Robinson, spent five weeks over the summer at the University of Oxford creating a python model of marine benthic coverages to investigate meta-stability between ecological regime shifts. <br>
-
-**Fluvial Geomorphology, Everglades Study** 07/2014 - 05/2015 <br>
+<br>
+**Fluvial Geomorphology, Everglades Study** 07/2014 - 05/2015
+<br style="line-height: 9px" />
 Research assistant for Laurel Larsen, professor in the Geography Department, UC Berkeley. <br>
-Manipulating a provided MATLAB code to perform noise reduction on flow rate data that was then used to determine bed shear stresses for calculating sediment transport. <br>
-Compared to observations from Acoustic Doppler Velocimeter (ADV) data, viewed via Vectrino Profiler playback. <br>
+Manipulating a provided MATLAB code to perform noise reduction on flow rate data that was then
+used to determine bed shear stresses for calculating sediment transport. <br>
+Compared to observations from Acoustic Doppler Velocimeter (ADV) data, viewed via
+Vectrino Profiler playback. <br>
 
-**Flood Inundation Simulations of the Bay Area and Sacramento Delta**
-03/2014 - 03/2015 <br>
-As a research assistant for prof. John Radke, prepared terrestrial spatial data used in simulating the 100-year storm impact, at various predicted Sea-Level Rise stages, across California. Gathered data through LiDar Analyst tools, & digitizing, and contacting local government agencies. <br>
+<br>
+**Flood Inundation Simulations of the Bay Area and Sacramento Delta** 03/2014 - 03/2015
+<br style="line-height: 9px" />
+As a research assistant for prof. John Radke, prepared terrestrial spatial data used in
+simulating the 100-year storm impact, at various predicted Sea-Level Rise stages, across California.  <br>
+Gathered data through LiDar Analyst tools, & digitizing, and contacting local government agencies. <br>
 
-<center>**Conference Talks**</center>
+<br>
+<h3>**Conference Talks**</h3>
 <br>
 
-**International Coral Reef Symposium** July 2020 <br>
+
+**International Coral Reef Symposium** July 2020
+<br style="line-height: 9px" />
 *Spatiotemporal Investigation of Reef Resilience in the Pacific Ocean in the 2014-2017 Bleaching Events* <br>
 **Rosanna Neuhausler^1^**, Laurel Larsen ^1^, and Mark Eakin ^2^ <br>
-1. University of California, Berkeley, USA.  2. National Oceanic and Atmospheric Administration
+1. University of California, Berkeley, USA. <br>
+2. National Oceanic and Atmospheric Administration<br>
 
-**2020 SIAM Conference on Mathematics of Planet Earth** INVITED June 2020 <br>
+<br>
+**2020 SIAM Conference on Mathematics of Planet Earth** INVITED June 2020
+<br style="line-height: 9px" />
 *The effect of spatial patterns in phase shifts: a stochastic spatiotemporal investigation of coral reefs* <br>
 **Rosanna Neuhausler^1^**, Martin Robinson ^2,3^, and Maria Bruna ^2,3^ <br>
-1. University of California, Berkeley, USA.  2. University of Oxford, Computer Science Department 3. University of Oxford, Mathematical Institute
+1. University of California, Berkeley, USA. <br>
+2. University of Oxford, Computer Science Department <br>
+3. University of Oxford, Mathematical Institute <br>
 
-
-**AGU Ocean Sciences Meeting** February 2018 <br> 
-*Satellites, Servers, and Spatial Overlay: A multifaceted workflow for investigating spatial determinants of Coral Bleaching Trends across the Pacific*
+<br>
+**AGU Ocean Sciences Meeting** February 2018
+<br style="line-height: 9px" />
+*Satellites, Servers, and Spatial Overlay: A multifaceted workflow for investigating spatial determinants*  <br>
+*of Coral Bleaching Trends across the Pacific* <br>
 **Rosanna Neuhausler^1^**, Laurel Larsen ^1^, and Mark Eakin ^2^ <br>
-1. University of California, Berkeley, USA.  2. National Oceanic and Atmospheric Administration
+1. University of California, Berkeley, USA. <br>
+2. National Oceanic and Atmospheric Administration <br>
 
-
-**2019 SIAM Conference on Applications of Dynamical Systems** May 2019 <br>
+<br>
+**2019 SIAM Conference on Applications of Dynamical Systems** May 2019
+<br style="line-height: 9px" />
 *An Integrated Approach to Coral-Algal Phase Shift Modeling: Numerical Methods Meets Data Science* <br>
 **Rosanna Neuhausler^1^**, Martin Robinson ^2,3^, and Maria Bruna ^2,3^ <br>
-1. University of California, Berkeley, USA.  2. University of Oxford, Computer Science Department 3. University of Oxford, Mathematical Institute
+1. University of California, Berkeley, USA. <br>
+2. University of Oxford, Computer Science Department <br>
+3. University of Oxford, Mathematical Institute <br>
 
-
-**AGU Ocean Sciences Meeting** February 2018 <br>
-*Assessing social vulnerabilities to potential Superfund site failures from coastal storm surge in the United States* <br>
+<br>
+**AGU Ocean Sciences Meeting** February 2018
+<br style="line-height: 9px" />
+*Assessing social vulnerabilities to potential Superfund site failures from coastal storm*  <br>
+*surge in the United States* <br>
 **Rosanna Neuhausler^1^**, Jacob Jean Bukoski^2^, and Adam Orford^3^. <br>
-1. University of California, Berkeley, Department of Geography.
-2. University of California, Berkeley, Department of Environmental Science, Policy, and Management.
-3. University of California, Berkeley, Energy and Resources Group.
+1. University of California, Berkeley, Department of Geography. <br>
+2. University of California, Berkeley, Department of Environmental Science, Policy, and Management. <br>
+3. University of California, Berkeley, Energy and Resources Group. <br>
 
-**European Coral Reef Symposium, Oxford, UK** 			         December 2017 <br>
-*Stochastic spatio-temporal model of coral cover as a function of herbivorous grazers, water quality, and coral demographics* <br>
+<br>
+**European Coral Reef Symposium, Oxford, UK** 			         December 2017
+<br style="line-height: 9px" />
+*Stochastic spatio-temporal model of coral cover as a function of herbivorous grazers,*  <br>
+*water quality, and coral demographics* <br>
 **Rosanna Neuhausler^1^**, Martin Robinson ^2,3^, and Maria Bruna ^2,3^ <br>
-1. University of California, Berkeley, USA.  2. University of Oxford, Computer Science Department 3. University of Oxford, Mathematical Institute
+1. University of California, Berkeley, USA. <br>
+2. University of Oxford, Computer Science Department <br>
+3. University of Oxford, Mathematical Institute <br>
 
-**Workshops on Big Data and Urban Informatics, Chicago, IL ** 		   August 2014 <br>
-*Planning for the Change: Mapping Sea Level Rise and Storm Inundation in Sherman Island Using 3Di Hydrodynamic Model and LiDAR* <br>
-Yang Ju^1^, Wei-Chen Hsu^1^, John D. Radke^1^, William L. Fourt^1^, Wei Lang^1^, Olivier Hoes^2^, Howard Foster^1^, Gregory Biging^1^, Emery Roe^1^, Martine Schmidt-Poolman^2^, **Rosanna Neuhausler^1^**, Amna Alruheil^1^ and William F. Maier^1^ <br>
-1. University of California, Berkeley, USA.  2. Delft University of Technology, Netherlands
-
-<center>**Selected Publications**</center>
 <br>
-Y. Ju, W. Hsu, J. Radke, W. Fourt, W. Lang, O. Hoes, H. Foster, G. Biging, M. Schmidt-Poolman, R. Neuhausler, A. Alruheil, W. Maier. (2016) <br> Planning for the Change: Mapping Sea Level Rise and Storm Inundation in Sherman Island Using 3Di Hydrodynamic Model and LiDAR. In: Thakuriah P., Tilahun N., Zellner M. (eds) Seeing Cities Through Big Data. Springer Geography. Springer, Cham. 1.2K downloads on [link.spring.com](https://link.springer.com/chapter/10.1007/978-3-319-40902-3_18)
+**Workshops on Big Data and Urban Informatics, Chicago, IL ** 		   August 2014
+<br style="line-height: 9px" />
+*Planning for the Change: Mapping Sea Level Rise and Storm Inundation in Sherman Island Using 3Di*  <br>
+*Hydrodynamic Model and LiDAR* <br>
+Yang Ju^1^, Wei-Chen Hsu^1^, John D. Radke^1^, William L. Fourt^1^, Wei Lang^1^, Olivier Hoes^2^,  <br>
+Howard Foster^1^, Gregory Biging^1^, Emery Roe^1^, Martine Schmidt-Poolman^2^, **Rosanna Neuhausler^1^**,  <br>
+Amna Alruheil^1^ and William F. Maier^1^ <br>
+1. University of California, Berkeley, USA. <br>
+2. Delft University of Technology, Netherlands
 
-<center>**Leadership and Competition**</center>
+<br>
+<h3>**Selected Publications**</h3>
 <br>
 
-**Geog40: Introduction to Earth System Science** | Graduate Student Instructor | 2018 <br>
-Taught two 2-hour lab sections consisting of around 18 students each, creating and grading assignments, creating midterm questions and holding office hours.<br>
+Y. Ju, W. Hsu, J. Radke, W. Fourt, W. Lang, O. Hoes, H. Foster, G. Biging, M. Schmidt-Poolman,  <br>
+R. Neuhausler, A. Alruheil, W. Maier. (2016)
+<br style="line-height: 9px" />
+*Planning for the Change: Mapping Sea Level Rise and Storm Inundation in Sherman Island*  <br>
+Using 3Di Hydrodynamic Model and LiDAR. In: Thakuriah P., Tilahun N., Zellner M. (eds) Seeing  <br>
+Cities Through Big Data. Springer Geography. Springer, Cham. 1.2K downloads on [link.spring.com](https://link.springer.com/chapter/10.1007/978-3-319-40902-3_18)
 
-**University of Tokyo Data Science Boot Camp** | Assistant Instructor | 2018  <br>
-Assisted in teaching data science to Ph.D. students from various humanities and natural science departments at the University of Tokyo. The Boot Camp ran for two weeks and was cohosted by Berkeley and the University of Tokyo’s Mathematics Institute.<br>
+<br>
+<h3>**Leadership and Competition**</h3>
+<br>
 
-**Sagehen Data Camp** | Organizer/Leader | 2018 <br>
-Leading a team of undergraduates to the UC Natural Reserve, Sagehen Creek Field Station, for
-a week long data organizing, processing, and analyzing bootcamp as an effort to expose
+**Geog40: Introduction to Earth System Science** | Graduate Student Instructor | 2018
+<br style="line-height: 9px" />
+Taught two 2-hour lab sections consisting of around 18 students each, creating and grading  <br>
+assignments, creating midterm questions and holding office hours.<br>
+
+**University of Tokyo Data Science Boot Camp** | Assistant Instructor | 2018
+<br style="line-height: 9px" />
+Assisted in teaching data science to Ph.D. students from various humanities and natural science  <br>
+departments at the University of Tokyo. The Boot Camp ran for two weeks and was cohosted by  <br>
+Berkeley and the University of Tokyo’s Mathematics Institute.<br>
+
+**Sagehen Data Camp** | Organizer/Leader | 2018
+<br style="line-height: 9px" />
+Leading a team of undergraduates to the UC Natural Reserve, Sagehen Creek Field Station, for  <br>
+a week long data organizing, processing, and analyzing bootcamp as an effort to expose  <br>
 students to field work and data science, as well as a revamping of the site.<br>
 
-**Cal EnviroTeam** | Treasurer/Member | 2015 <br>
-Designed a water filtration system to compete in the annual water treatment competition at the ASCE Mid-Pacific Student Conference. <br>
+**Cal EnviroTeam** | Treasurer/Member | 2015 
+<br style="line-height: 9px" />
+Designed a water filtration system to compete in the annual water treatment competition  <br>
+at the ASCE Mid-Pacific Student Conference. <br>
 As treasurer, was in charge of managing the organizations funds.<br>
 
-**Berkeley Water Group IdeaLab** | Creative Director/Member | 2013 - 2014 <br>
+**Berkeley Water Group IdeaLab** | Creative Director/Member | 2013 - 2014
+<br style="line-height: 9px" />
 Forum for Berkeley-affiliated individuals from all departments to discuss water-related issues. <br>
 Created posters for our biweekly meetings, which host speakers from water-related fields.<br>
 
-**Global Architecture Brigades** | Member | 2012 - 2013 <br>
+**Global Architecture Brigades** | Member | 2012 - 2013
+<br style="line-height: 9px" />
 With Berkeley chapter, won rain harvest system design competition in fall 2012.<br>
 Flew to Honduras with teammates to construct our design.<br>
 
-**Pioneer High School Track and Cross Country team** | Co-captaion/Teammate | 2008-2012 <br>
+**Pioneer High School Track and Cross Country team** | Co-captaion/Teammate | 2008-2012
+<br style="line-height: 9px" />
 Led workouts, organized team events, motivated and supported teammates. <br>
 Won states titles in 4 x 800 meter relay and regional titles in 5 kilometer and 800 meter races. <br>
-Continuing to race in long distance races today. I finished first out of all the women in the 2016 Napa Wine Country Half Marathon and am training regularly with friends.
-
-
-
+Continuing to race in long distance races today. I finished first out of all the women in the  <br>
+2016 Napa Wine Country Half Marathon and am training regularly with friends.
 

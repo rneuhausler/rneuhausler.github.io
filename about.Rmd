@@ -2,11 +2,13 @@
 title: ""
 ---
 
-## About Me
 
 <style type="text/css">
-.title {
-  display: none;
+.body {
+  text-align: justify;
+  padding-top: 30px;
+  padding-right: 100px;
+  padding-left: 80px;"
 }
 
 #getting-started img {
@@ -15,13 +17,12 @@ title: ""
 
 </style>
 
-<div class="row" style="padding-top: 30px;">
-<div class="col-sm-6">
+<div class="body">
 
-To the right you can see a self-taken picture of me and St. Gallen, Switzerland, the town in which 
-was born. I left this town at the age of six when I moved
-to the United States. Since then I lived in Ann Arbor, MI, for twelve years, and 
-in Berkeley, CA, for the last eight. Having experienced semi-urban environments,
+
+
+I was born in St. Gallen Switzerland and moved to the U.S. at the age of six. Since then I lived in Ann Arbor, MI, for twelve years, 
+in Berkeley, CA, for eight. I'm now situated in New York City while I finish my dissertation. Having experienced semi-urban environments,
 with each consecutive location having greater pollution problems, I became interested
 in the human-environmental interface. While I originally wanted to express this interest
 through architecture, I've come to be more intrigued by the larger system, exploring human-environmental interactions at various scales. 
@@ -29,23 +30,9 @@ through architecture, I've come to be more intrigued by the larger system, explo
 I spent 2012 - 2016 completing a [B.S. in the College of Natural Resources](http://guide.berkeley.edu/undergraduate/degree-programs/conservation-resource-studies/), with a focus on water systems  engineering, and a [B.A. in the College of Environmental Design](http://guide.berkeley.edu/undergraduate/degree-programs/urban-studies/)
 at the University of California, Berkeley. During this time I learned about how water moves through an ecosystem, its effect on that ecosystem, how we fight over water, extract water, have unequal access to safe water, pollutants found in water, and how urbanization has an influence on all of the above. I contributed to key research on storm inundations across all of California, sediment transport in the Everglades, and the urban heat island effect in Hong Kong. I spent four years learning about all the things I had been questioning and more.
 
-Now I am a [Ph.D. candidate in Geography, Earth System Science](http://geography.berkeley.edu/graduate-studies/program-description/) (still at Berkeley). At the beginning of my doctoral studies, I took part in a two-year National Science Foundation [Data Science program](http://ds421.berkeley.edu/) and completed a Designated Emphasis in [Computational and Data Science and Engineering](https://citris-uc.org/initiatives/decse/) to build on my quantitaive analytical skills. Throughout my Ph.D. I've been studying various human-environmental systems - as well as operating systems and other technical components of computing - but overtime became most drawn to  scoral reefs. 
+Currently, I am a [Ph.D. candidate in Geography, Earth System Science](http://geography.berkeley.edu/graduate-studies/program-description/) (still at Berkeley). At the beginning of my doctoral studies, I took part in a two-year National Science Foundation [Data Science program](http://ds421.berkeley.edu/) and completed a Designated Emphasis in [Computational and Data Science and Engineering](https://citris-uc.org/initiatives/decse/) to build on my quantitaive analytical skills. Throughout my Ph.D. I've been studying various human-environmental systems - as well as operating systems and other technical components of computing - but overtime became most drawn to coral reefs. 
 
-Nursing an estimated 25% of all marine life, coral reefs are key to human and environmental prosperity. Provided my background in urban studies, combined with my hydrologist lens and multi-year experience with remote sensing, I found the most suitable contribution to the field of marine biology that I can provide in this context to be mapping out coastal development and quantifying the potential impacts it has on adjacent reefs. This is what I've been primarily working on for the past year: scrapping spatial information from the web, creating a pixel based land use classifier, and applying it accross the Pacific, all wrapped up in a data pipeline. I plan on completing my dissertation May 2021 and hope to further apply my human-marine system domain knowledge and statistical skillset in addressing environmental concerns.
-
-
-</div>
-<div class="col-sm-6">
-
-
-
-
-![](images/sankt_gallen.jpg)
-
-
-
-
-![](images/coastal_development.jpg)
+Coral reefs, nurseries to an estimated 25% of all marine life, are key to human and environmental prosperity. Provided my background in urban studies, combined with my hydrologist lens and multi-year experience with remote sensing, I found the most suitable contribution to the field of marine biology that I can provide in this context to be mapping out coastal development and quantifying the potential impacts it has on adjacent reefs. This is what I've been primarily working on for the past year: scrapping spatial information from the web, creating a pixel based land use classifier, and applying it accross the Pacific, all wrapped up in a data pipeline. I plan on completing my dissertation May 2021 and hope to further apply my human-marine system domain knowledge and statistical skillset in addressing environmental concerns.
 
 
 </div>

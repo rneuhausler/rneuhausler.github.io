@@ -1,0 +1,9 @@
+---
+title: ""
+---
+
+<p style="text-align:center">
+<strong>E:</strong> rneuhausler@berkeley.edu <br>
+<strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/rosanna-neuhausler/">linkedin.com/in/rosanna-neuhausler</a> <br>
+<strong>github</strong>: <a href="https://github.com/rneuhausler">github.com/rneuhausler</a><br>
+</p>
