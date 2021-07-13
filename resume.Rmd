@@ -31,11 +31,11 @@ h3 {
   padding: 10px;
 }
 .left {
-  width: 30%;
+  width: 20%;
   padding-left: 20px;
 }
 .right {
-  width: 70%;
+  width: 80%;
   padding-right: 20px:
 }
 .row:after {
@@ -56,58 +56,100 @@ h3 {
 
 <h3>Contact</h3>
 ___
+
 rneuhausler@berkeley.edu <br>
 
 <h3>Education</h3>
 ___
 
 <p style="text-align: left;" padding-top: 2px; padding-right: 2px>
+  
   <strong>University of California, Berkeley</strong><br>
-  <strong>Ph.D.</strong> Geography, Earth System Science.<br>
-  <i>Adv. Candidacy 2019</i><br>
-  <strong>Ph.D. Minor</strong> Computational and Data Science and Engineering<br>
-  <i>2016 - May 2021</i><br>
-  <strong>B.A</strong> Urban Studies <br>
+  <br>
+  <strong>Ph.D.</strong> Geography, Earth System Science.
+  <i style="float: right;">2016 - May 2021</i><br>
+  <strong>Ph.D. Minor</strong> Computational and Data
+  Science and Engineering<br>
+  <br>
+  
+  <strong>B.A</strong> Urban Studies <i style="float: right;">2012 - 2016</i>
+  <br>
   <strong>B.S.</strong> Conservation & Resource Studies<br>
-  <i>2012 - 2016</i>
+  
 </p>
-
-
 
 
 <h3>Skills</h3>
 ___
 <p style="text-align: left;" padding-top: 2px; padding-right: 2px>
   <strong>Methods/Concepts:</strong><br>
-  Complex Systems Analysis, Remote Sensing/GIS, Machine Learning<br>
+  Complex Systems Analysis, Remote Sensing, 
+  GIS, Machine Learning, AI
+  IoT/Smart Edge Devices
   <br>
   <strong>Technical:</strong><br>
-  Python, R, MATLAB, Git, LaTeX, ArcGIS, Photoshop<br>
+  Python, R, Google Earth Engine 
+  (Javascript and Python Interfaces),
+  MATLAB, Git, LaTeX, ArcGIS,
+  Photoshop<br>
   <br>
   <strong>Language:</strong><br>
-   English, German, and Swiss-German.<br>
+   English, German, <br>
+   and Swiss-German. <br>
 </p>
 
 <h3>Awards</h3>
 ___
 
-<p style="text-align: left;" padding-top: 2px; padding-right: 2px>
-  <strong>NASA FINESST</strong><br>
-  <i>2019 - 2022</i><br>
-  <strong>ISEECI Summer Research Grant</strong><br>
-  <i>2018</i><br>
+  <p>
+  <strong>NASA FINESST</strong>
+  <i style="float: right;">2019 - 2022</i><br>
+  </p>
+  <p>
+  <strong>ISEECI Summer Research Grant</strong>
+  <i style="float: right;">2018</i><br>
+  </p>
+  <p>
   <strong>NSF Research Traineeship Fellowship</strong>
-  <i>2017 - 2018</i><br>
-  <strong>Berkeley Conference Travel Grant</strong><br>
-  <i>2017</i><br>
+  <i style="float: right;">2017 - 2018</i><br>
+  </p>
+  <p>
+  <strong>Berkeley Conference Travel Grant</strong>
+  <i style="float: right;">2017</i><br>
+  </p>
+  <p>
   <strong>EWJ Gateway Fellowship</strong>
-  <i>2016 - 2017</i><br>
+  <i style="float: right;">2016 - 2017</i><br>
+  </p>
+
+
+<h3>Projects</h3>
+___
+
+  <p>
+  <strong>Coraleer - Startup development</strong>
+  <i style="float: right;">Summer 2020</i><br>
+  Participated in Berkeley SkyDeck’s HotDesk incubator program to develop autonomous surface vehicles for coral reef surveying.<br>
+  </p>
+  <p>
+  <strong>Visualizing Voices - Hackathon Winner</strong>
+  <i style="float: right;">Fall 2018</i><br>
+  Created a webscraper to pull instances of water pollution mentions on blog posts from CA non-profit to detect gaps in government's water quality data.<br>
+  </p>
+  <p>
+  <strong>Face Recognition on the Edge</strong>
+  <i style="float: right;">Fall 2018</i><br>
+  Used AI on intelligent edge devices to create a cloud-independent intruder
+detection system for final group project of a graduate Operating Systems course.<br>
 </p>
+  
 <br>
 <br>
 <br>
 
 </div>
+
+
 
 <div class="column right">
 
