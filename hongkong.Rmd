@@ -59,10 +59,19 @@ title: ""
   clear: both;
 }
 
+.margin-div{
+margin-right:90px
+margin-left:90px
+}
+
 </style>
 </head>
 
 <body>
+<br>
+<br>
+<br>
+<div class="margin-div">
 <br>
 <strong>Position:</strong> Intern at the <a href="https://www.cuhk.edu.hk/english/index.html">Chinese University of Hong Kong</a> through the <a href="https://calenergycorps.berkeley.edu">Cal Energy Corps Program</a>. <br>
 <br>
@@ -75,6 +84,9 @@ estimate each materials impact on the area's temperature. This work was done for
 in their urban heat island effect study looking into the thermal impact of different building materials.<br>
 <br>
 <br>
+</div>
+
+
 <div class="container" style="float: left;">
   <img src="images/hkposter_preview.png" alt="Avatar" class="image">
   <div class="overlay"> <a style="color:white;" href="pdfs/hkposter.pdf"><br><br><br>poster</a> </div>
@@ -84,11 +96,9 @@ in their urban heat island effect study looking into the thermal impact of diffe
   <img src="images/hkblog_preview.png" alt="Avatar" class="image">
   <div class="overlay"> <a style="color:white;" href="https://hkbyrn.wordpress.com"><br><br><br>blog</a> </div>
 </div>
-
 <br>
 <br>
 <br>
-
 </body>
 
 

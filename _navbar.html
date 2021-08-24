@@ -1,3 +1,5 @@
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
   img {
@@ -5,49 +7,99 @@
   }
 
   body {
-    color: #42565e;
-    background-color: #ffffff } /*for dark background: #0D2A35*/
+    background-color: #ffffff;
+    text-color: #000000;
+    font-family: inherit;
+    font-weight: lighter;
+    font-size: 13px;
+  } /*for dark background: #0D2A35*/
 
-  ul.a {list-style-type: square;}
   a:link{ color: #285161 }
   a:visited{ color: #285161}
 
-.sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 16px;
-  color: #869396;
-  display: block;
-  border: none;
-  background: none;
-  width:100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
+
+
+  .navbar {
+    width: 100%;
+    font-family: inherit;
+    background-color: #ffffff;
+    border: 1px solid black;
+    color: #000000;
+    display: inline-block;
+    text-align:center;
+    margin-bottom: 0px;
+  }
+
+  .navbar a {
+    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+    color: #000000;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+  }
+
+  .navbar a.active {
+    border-bottom: 3px solid red;
+  }
+
+  .dropbtn {
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    padding: 12px 25px;
+    background-color: inherit;
+    font-family: inherit;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #42565e;
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    border-bottom: 3px solid red;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e8e8e8;
+    min-width: 160px;
+    z-index: 3;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+  }
+
+/*links inside*/
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+  }
+
+  .show {
+    display: block;
+  }
+
+
+  .h1{
+    font-weight: lighter;
+  }
+    p{
+padding-right: 90px;
+padding-left: 90px;
 }
 
-/* Main content */
-.main {
-  margin-left: 200px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-.dropdown-container {
-  display: none;
-  background-color: white;
-  color: black;
-  padding-left: 15px;
-}
-.fa-caret-down {
-  float: right;
-  padding-right: 6px;
-}
 
 </style>
 
@@ -55,46 +107,49 @@
 
 <div>
 
+<br>
 
-<img src="images/newyork_zoom.png" alt="Profile" style="width:119px;height:119px;">
+<br>
 
+<p>
+<img src="images/newyork_zoom.png" alt="Profile" style="width:145px;height:145px;">
 <h1>Rosanna Neuhausler</h1>
 <strong>Ph.D. Candidate in the Environmental Systems Dynamics Lab, U.C. Berkeley</strong> <br> Looking to apply human-environmental system domain knowledge and statistical skillset in addressing socioenvironmental concerns.
-
-<hr>
-
-
-<div class="sidenav">
+</p>
+<div class="navbar">
   <a href=index.html>About Me</a>
-  <button class="dropdown-btn">Projects
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href=edgeai.html>- AI at the Edge for Intruder Detection</a>
-    <a href=hongkong.html>- Fisheye Image Segmentation</a>
-  </div>
-  <a href=resume.html>Resume</a>
-  <a href=cv.html>CV</a>
+  <a href=resume.html>Resume, etc.</a>
   <a href=contact.html>Contact</a>
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Projects</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href=edgeai.html>AI at the Edge for Intruder Detection</a>
+      <a href=hongkong.html>Fisheye Image Segmentation</a>
+    </div>
+  </div>
+
 </div>
 
-<hr>
+
+<br>
+<br>
 
 </div>
 
 <script>
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
     }
-  });
+  }
 }
 </script>

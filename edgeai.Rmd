@@ -58,10 +58,19 @@ title: ""
   clear: both;
 }
 
+.margin-div{
+margin-right:90px
+margin-left:90px
+}
+
 </style>
 </head>
 
 <body>
+<br>
+<br>
+<br>
+<div class="margin-div">
 <br>
 <strong>Position:</strong> Student in Graduate Operating Systems Course <br>
 <br>
@@ -70,6 +79,9 @@ title: ""
 <strong>Assignment:</strong> Course Final Project. My team and I decided to use AI on intelligent edge devices to create and test a cloud-independent intruder detection system.<br>
 <br>
 <br>
+</div>
+
+
 <div class="container" style="float: left;">
   <img src="images/aipaper_preview.png" alt="Avatar" class="image">
   <div class="overlay"> <a style="color:white;" href="https://people.eecs.berkeley.edu/~kubitron/courses/cs262a-F18/projects/reports/project9_report_ver2.pdf"><br><br><br>paper</a> </div>
@@ -79,7 +91,6 @@ title: ""
   <img src="images/aiposter_preview.png" alt="Avatar" class="image">
   <div class="overlay"> <a style="color:white;" href="https://people.eecs.berkeley.edu/~kubitron/courses/cs262a-F18/projects/reports/project9_poster.pdf"><br><br><br>poster</a> </div>
 </div>
-
 <br>
 <br>
 <br>

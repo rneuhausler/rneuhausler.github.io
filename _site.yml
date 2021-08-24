@@ -7,7 +7,7 @@ navbar:
     - text: "Home"
       href: index.html
     - text: "About Me"
-      href: about.html
+      href: index.html
     - text: "Resume"
       href: neuhausler_resume.pdf
     - text: "CV"
@@ -18,5 +18,5 @@ navbar:
         href: https://people.eecs.berkeley.edu/~kubitron/courses/cs262a-F18/projects/reports/project9_report_ver2.pdf
 output:
   html_document:
-    theme: darkly
+    theme: yeti
     css: starter.css

@@ -2,37 +2,36 @@
 title: ""
 ---
  
+<style>
 
-<style type="text/css">
-.body {
-  text-align: justify;
-  padding-top: 30px;
-  padding-right: 100px;
-  padding-left: 80px;"
-}
-
-#getting-started img {
-  margin-right: 10px;
+p{
+padding-right: 90px;
+padding-left: 90px;
 }
 
 </style>
 
-<div class="body">
+<body>
 
+<br>
+<br>
+<br>
 
-
+<p>
 Hello! My name is Rosanna, I am from St. Gallen Switzerland and moved to the U.S. during my childhood. Since then I have lived in Michigan and California. Having experienced semi-urban environments,
 with each consecutive location having greater pollution concerns, I developed an interest
 in the human-environmental interface. While originally wanting to express this interest
 through architecture, I've come to be more intrigued by the system at large, exploring human-environmental interactions at various scales. 
-
+</p>
+<p>
 I spent 2012 - 2016 completing a [B.S. in the College of Natural Resources](http://guide.berkeley.edu/undergraduate/degree-programs/conservation-resource-studies/), with a focus on water systems  engineering, and a [B.A. in the College of Environmental Design](http://guide.berkeley.edu/undergraduate/degree-programs/urban-studies/)
 at the University of California, Berkeley. 
-
+</p>
+<p>
 Currently, I am a [Ph.D. candidate in Geography, Earth System Science](http://geography.berkeley.edu/graduate-studies/program-description/) (still at Berkeley). At the beginning of my doctoral studies, I took part in a two-year National Science Foundation [Data Science program](http://ds421.berkeley.edu/) and completed a Designated Emphasis in [Computational and Data Science and Engineering](https://citris-uc.org/initiatives/decse/) to build on my quantitaive analytical skills. I plan on completing my dissertation August 2021 and hope to further apply my domain knowledge and statistical skillset in addressing environmental concerns.
+</p>
 
-
-</div>
+</body>
 
 
 

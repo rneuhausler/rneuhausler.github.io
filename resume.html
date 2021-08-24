@@ -16,7 +16,7 @@
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<link href="site_libs/bootstrap-3.3.5/css/darkly.min.css" rel="stylesheet" />
+<link href="site_libs/bootstrap-3.3.5/css/yeti.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
@@ -229,6 +229,8 @@ $(document).ready(function () {
 
 
 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 
   img {
@@ -236,49 +238,99 @@ $(document).ready(function () {
   }
 
   body {
-    color: #42565e;
-    background-color: #ffffff } /*for dark background: #0D2A35*/
+    background-color: #ffffff;
+    text-color: #000000;
+    font-family: inherit;
+    font-weight: lighter;
+    font-size: 13px;
+  } /*for dark background: #0D2A35*/
 
-  ul.a {list-style-type: square;}
   a:link{ color: #285161 }
   a:visited{ color: #285161}
 
-.sidenav a, .dropdown-btn {
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 16px;
-  color: #869396;
-  display: block;
-  border: none;
-  background: none;
-  width:100%;
-  text-align: left;
-  cursor: pointer;
-  outline: none;
+
+
+  .navbar {
+    width: 100%;
+    font-family: inherit;
+    background-color: #ffffff;
+    border: 1px solid black;
+    color: #000000;
+    display: inline-block;
+    text-align:center;
+    margin-bottom: 0px;
+  }
+
+  .navbar a {
+    display: inline-block;
+    font-size: 13px;
+    text-align: center;
+    color: #000000;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-bottom: 3px solid transparent;
+  }
+
+  .navbar a.active {
+    border-bottom: 3px solid red;
+  }
+
+  .dropbtn {
+    cursor: pointer;
+    font-size: 14px;
+    border: none;
+    outline: none;
+    padding: 12px 25px;
+    background-color: inherit;
+    font-family: inherit;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-/* On mouse-over */
-.sidenav a:hover, .dropdown-btn:hover {
-  color: #42565e;
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    border-bottom: 3px solid red;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #e8e8e8;
+    min-width: 160px;
+    z-index: 3;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.2);
+  }
+
+/*links inside*/
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+  }
+
+  .show {
+    display: block;
+  }
+
+
+  .h1{
+    font-weight: lighter;
+  }
+    p{
+padding-right: 90px;
+padding-left: 90px;
 }
 
-/* Main content */
-.main {
-  margin-left: 200px; /* Same as the width of the sidenav */
-  font-size: 20px; /* Increased text to enable scrolling */
-  padding: 0px 10px;
-}
-
-.dropdown-container {
-  display: none;
-  background-color: white;
-  color: black;
-  padding-left: 15px;
-}
-.fa-caret-down {
-  float: right;
-  padding-right: 6px;
-}
 
 </style>
 
@@ -286,47 +338,50 @@ $(document).ready(function () {
 
 <div>
 
+<br>
 
-<img src="images/newyork_zoom.png" alt="Profile" style="width:119px;height:119px;">
+<br>
 
+<p>
+<img src="images/newyork_zoom.png" alt="Profile" style="width:145px;height:145px;">
 <h1>Rosanna Neuhausler</h1>
 <strong>Ph.D. Candidate in the Environmental Systems Dynamics Lab, U.C. Berkeley</strong> <br> Looking to apply human-environmental system domain knowledge and statistical skillset in addressing socioenvironmental concerns.
-
-<hr>
-
-
-<div class="sidenav">
+</p>
+<div class="navbar">
   <a href=index.html>About Me</a>
-  <button class="dropdown-btn">Projects
-    <i class="fa fa-caret-down"></i>
-  </button>
-  <div class="dropdown-container">
-    <a href=edgeai.html>- AI at the Edge for Intruder Detection</a>
-    <a href=hongkong.html>- Fisheye Image Segmentation</a>
-  </div>
-  <a href=resume.html>Resume</a>
-  <a href=cv.html>CV</a>
+  <a href=resume.html>Resume, etc.</a>
   <a href=contact.html>Contact</a>
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Projects</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href=edgeai.html>AI at the Edge for Intruder Detection</a>
+      <a href=hongkong.html>Fisheye Image Segmentation</a>
+    </div>
+  </div>
+
 </div>
 
-<hr>
+
+<br>
+<br>
 
 </div>
 
 <script>
-var dropdown = document.getElementsByClassName("dropdown-btn");
-var i;
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
-for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
     }
-  });
+  }
 }
 </script>
 
@@ -338,179 +393,39 @@ for (i = 0; i < dropdown.length; i++) {
 </div>
 
 
-<head>
 <style>
 
-i {
-  color:#869396;
-  font-size: 14px;
+figure .image {
+    width: 100%;
 }
 
-p {
-  text-align: justify;
-  padding-top: 5px;
-  padding-right: 10px
-  }
-
-h3 {
-  margin-bottom: -17px;
-}
-
-/* columns */
-* {box-sizing: border-box;}
-
-.column {
-  float: left;
-  padding: 10px;
-}
-.left {
-  width: 20%;
-  padding-left: 20px;
-}
-.right {
-  width: 80%;
-  padding-right: 20px:
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
+figure {
+    text-align: center;
+    display: table;
+    max-width: 80%; /* demo; set some amount (px or %) if you can */
+    margin: 10px auto; /* not needed unless you want centered */
 }
 
 </style>
-</head>
 <body>
-<p><a href="pdfs/neuhausler_resume.pdf" >PDF</a></p>
-<div class="column left">
-<h3>
-Contact
-</h3>
-<hr />
-<p><a href="mailto:rneuhausler@berkeley.edu" class="email">rneuhausler@berkeley.edu</a> <br></p>
-<h3>
-Education
-</h3>
-<hr />
-<p style="text-align: left;" padding-top: 2px; padding-right: 2px>
-  
-  <strong>University of California, Berkeley</strong><br>
-  <br>
-  <strong>Ph.D.</strong> Geography, Earth System Science.
-  <i style="float: right;">2016 - May 2021</i><br>
-  <strong>Ph.D. Minor</strong> Computational and Data
-  Science and Engineering<br>
-  <br>
-  
-  <strong>B.A</strong> Urban Studies <i style="float: right;">2012 - 2016</i>
-  <br>
-  <strong>B.S.</strong> Conservation & Resource Studies<br>
-  
-</p>
-<h3>
-Skills
-</h3>
-<hr />
-<p style="text-align: left;" padding-top: 2px; padding-right: 2px>
-  <strong>Methods/Concepts:</strong><br>
-  Complex Systems Analysis, Remote Sensing, 
-  GIS, Machine Learning, AI
-  IoT/Smart Edge Devices
-  <br>
-  <strong>Technical:</strong><br>
-  Python, R, Google Earth Engine 
-  (Javascript and Python Interfaces),
-  MATLAB, Git, LaTeX, ArcGIS,
-  Photoshop<br>
-  <br>
-  <strong>Language:</strong><br>
-   English, German, <br>
-   and Swiss-German. <br>
-</p>
-<h3>
-Awards
-</h3>
-<hr />
-<p>
-<strong>NASA FINESST</strong> <i style="float: right;">2019 - 2022</i><br>
-</p>
-<p>
-<strong>ISEECI Summer Research Grant</strong> <i style="float: right;">2018</i><br>
-</p>
-<p>
-<strong>NSF Research Traineeship Fellowship</strong> <i style="float: right;">2017 - 2018</i><br>
-</p>
-<p>
-<strong>Berkeley Conference Travel Grant</strong> <i style="float: right;">2017</i><br>
-</p>
-<p>
-<strong>EWJ Gateway Fellowship</strong> <i style="float: right;">2016 - 2017</i><br>
-</p>
-<h3>
-Projects
-</h3>
-<hr />
-<p>
-<strong>Coraleer - Startup development</strong> <i style="float: right;">Summer 2020</i><br> Participated in Berkeley SkyDeck’s HotDesk incubator program to develop autonomous surface vehicles for coral reef surveying.<br>
-</p>
-<p>
-<strong>Visualizing Voices - Hackathon Winner</strong> <i style="float: right;">Fall 2018</i><br> Created a webscraper to pull instances of water pollution mentions on blog posts from CA non-profit to detect gaps in government’s water quality data.<br>
-</p>
-<p>
-<strong>Face Recognition on the Edge</strong> <i style="float: right;">Fall 2018</i><br> Used AI on intelligent edge devices to create a cloud-independent intruder detection system for final group project of a graduate Operating Systems course.<br>
-</p>
-<p><br> <br> <br></p>
-</div>
-<div class="column right">
-<h3>
-Research
-</h3>
-<hr />
-<strong>Ph.D. Candidate</strong> <i style="float: right;">2019 - May 2021</i> <br> <i>Environmental Systems Dynamics Lab, UC Berkeley, California</i> <br>
-<p>
-Creating pixel-level land use classifier for remotely sensed imagery across the Pacific Ocean, data pipeline, and Random Forest model for investigating various spatial determinants of coral reef health. As project manager, created collaboration with a team at NOAA and applied for/received funding for my and my undergraduate research assistant’s salaries from NASA.
-</p>
-<strong>Visiting Researcher</strong> <i style="float: right;">Summer 2017</i> <br> <i>Mathematical Institute, Oxford University, United Kingdom</i> <br>
-<p>
-Developed a stochastic spatiotemporal object-oriented python model of coral reef benthic coverages for analysis of quantifying spatial competition.
-</p>
-<strong>Research Assistant</strong> <i style="float: right;">2014 - 2015</i> <br> <i>Center for Catastrophic Risk Management, UC Berkeley, California</i> <br>
-<p>
-Gathered, managed, and processed terrestrial spatial data in multi-server network <br> for simulating Sea Level Rise impact on the California’s coastline infrastructure. <br>
-</p>
-<h3>
-Internships
-</h3>
-<hr />
-<strong>Cal Energy Corps Participant</strong> <i style="float: right;">Summer 2015</i> <br> <i>Chinese University of Hong Kong, Hong Kong</i> <br>
-<p>
-Wrote MATLAB functions to semi-automate process of segmenting fisheye images of courtyard enveloping structures for calculating the Urban Heat Island Effect of various building materials. Taught myself how to code and explained code to the architecture majors that then used it.
-</p>
-<strong>Architect Intern</strong> <i style="float: right;">Summer 2013</i> <br> <i>Ardnt Geiger Herrmann Architecture Firm, Switzerland</i> <br>
-<p>
-Designed interior features for an eight million dollar house on CAD software. Contributed to numerous projects presentation prep and CAD drawings.
-</p>
-<h3>
-Leadership
-</h3>
-<hr />
-<p style="text-align: left;" padding-top: 2px; padding-right: 2px>
-<strong>Graduate Student Instructor</strong> <i style="float: right;">Spring 2020 and Fall 2018</i> <br>
-<strong>Geog 40: Intro to Earth System Science, UC Berkeley, California</strong> <br>
+<p><br> <br></p>
+<center>
+Resume, <a href="pdfs/neuhausler_resume.pdf" >open pdf</a>
+</center>
 <br>
-<strong>Assistant Instructor</strong> <i style="float: right;">Summer 2018</i> <br>
-<strong>University of Tokyo Data Science Boot Camp, Japan</strong> <br>
-<br>
-<strong>Organizer/Leader</strong> <i style="float: right;">Summer 2018</i> <br>
-<strong>Sagehen Natural Reserve Station Data Camp, California</strong> <br>
-<br>
-<strong>Community Liaison</strong> <i style="float: right;">Spring 2013</i> <br>
-<strong>Cool California Challenge, California</strong> <br>
-<br>
-<strong>Co-captain/Teammate</strong> <i style="float: right;">2008 - 2012</i> <br>
-<strong>Pioneer High School Track & Cross Country, Ann Arbor MI</strong>
-</p>
-<p><br> <br> <br></p>
-</div>
+<center>
+<embed src="pdfs/neuhausler_resume.pdf" width="80%" height="550" type="application/pdf">
+</center>
+<p><br> <br> <br> <br></p>
+<center>
+Portfolio and C.V. available upon request
+</center>
+<figure>
+<img class="image" src="images/portfolio_piece.jpeg" alt="some_image_alt_text"/>
+<figcaption>
+</figcaption>
+</figure>
+<p><br> <br> <br> <br></p>
 </body>
 
 
