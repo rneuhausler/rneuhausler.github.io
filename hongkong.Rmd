@@ -69,7 +69,8 @@ margin-left:90px
 
 <body>
 <br>
-
+<br>
+<br>
 <div class="margin-div">
 <br>
 <strong>Position:</strong> Intern at the <a href="https://www.cuhk.edu.hk/english/index.html">Chinese University of Hong Kong</a> through the <a href="https://calenergycorps.berkeley.edu">Cal Energy Corps Program</a>. <br>
@@ -84,6 +85,7 @@ in their urban heat island effect study looking into the thermal impact of diffe
 <br>
 <br>
 </div>
+
 
 <div class="container" style="float: center;">
   <img src="images/hkposter_preview.png" alt="Avatar" class="image">
