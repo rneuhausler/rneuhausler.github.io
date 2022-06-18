@@ -25,17 +25,6 @@ figure {
 <br>
 <br>
 
-
-<center>
-Resume, <a href="pdfs/neuhausler_resume.pdf" >open pdf</a>
-</center>
-<br>
-<center>
-<embed src="pdfs/neuhausler_resume.pdf" width="80%" height="550" type="application/pdf">
-</center>
-
-<br>
-<br>
 <br>
 <br>
 
@@ -53,8 +42,22 @@ Portfolio and C.V. available upon request
 
 <br>
 <br>
+
+
+<center>
+Resume, <a href="pdfs/neuhausler_resume.pdf" >open pdf</a>
+</center>
+<br>
+<center>
+<embed src="pdfs/neuhausler_resume.pdf" width="80%" height="550" type="application/pdf">
+</center>
+
 <br>
 <br>
+<br>
+<br>
+
+
 
 
 </body>
