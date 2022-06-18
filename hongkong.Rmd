@@ -10,7 +10,7 @@ title: ""
 .container {
   position: relative;
   width: 50%;
-  max-width: 400px;
+  max-width: 700px;
 }
 
 .image {
@@ -39,8 +39,8 @@ title: ""
   opacity: 1;
 }
 
-/* columns */
-* {box-sizing: border-box;}
+/* columns 
+ {box-sizing: border-box;}
 
 .column {
   float: left;
@@ -63,14 +63,13 @@ title: ""
 margin-right:90px
 margin-left:90px
 }
-
+*/
 </style>
 </head>
 
 <body>
 <br>
-<br>
-<br>
+
 <div class="margin-div">
 <br>
 <strong>Position:</strong> Intern at the <a href="https://www.cuhk.edu.hk/english/index.html">Chinese University of Hong Kong</a> through the <a href="https://calenergycorps.berkeley.edu">Cal Energy Corps Program</a>. <br>
@@ -86,16 +85,21 @@ in their urban heat island effect study looking into the thermal impact of diffe
 <br>
 </div>
 
-
-<div class="container" style="float: left;">
+<div class="container" style="float: center;">
   <img src="images/hkposter_preview.png" alt="Avatar" class="image">
-  <div class="overlay"> <a style="color:white;" href="pdfs/hkposter.pdf"><br><br><br>poster</a> </div>
+  <div class="overlay"> <a style="color:white;" href="pdfs/hkposter.pdf"><br><br><br><br>poster</a> </div>
 </div>
 
-<div class="container" style="float: right;">
+<br>
+<br>
+
+<div class="container" style="float: center;">
   <img src="images/hkblog_preview.png" alt="Avatar" class="image">
-  <div class="overlay"> <a style="color:white;" href="https://hkbyrn.wordpress.com"><br><br><br>blog</a> </div>
+  <div class="overlay"> <a style="color:white;" href="https://hkbyrn.wordpress.com"><br><br><br><br>blog</a> </div>
 </div>
+
+
+
 <br>
 <br>
 <br>
